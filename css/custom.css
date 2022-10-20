@@ -1,0 +1,76 @@
+@font-face {
+font-family: '小恐龙';
+src:
+url('/fonts/iconfont.woff2') format('woff2'),
+url('/fonts/iconfont.woff') format('woff'),
+url('/fonts/iconfont.ttf') format('truetype'),
+}
+
+.iconfont {
+  font-family: "小孔龙" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-konglong:before {
+  content: "\e6ec";
+}
+
+.icon-ma:before {
+  content: "\e61b";
+}
+
+.icon-ji:before {
+  content: "\e61e";
+}
+
+.icon-shengxiaogou:before {
+  content: "\e685";
+}
+
+.icon-shengxiaohou:before {
+  content: "\e686";
+}
+
+.icon-shengxiaohu:before {
+  content: "\e687";
+}
+
+.icon-shengxiaoma:before {
+  content: "\e688";
+}
+
+.icon-shengxiaoji:before {
+  content: "\e689";
+}
+
+.icon-shengxiaoshe:before {
+  content: "\e68a";
+}
+
+.icon-shengxiaoniu:before {
+  content: "\e68b";
+}
+
+.icon-shengxiaozhu:before {
+  content: "\e68c";
+}
+
+.icon-shengxiaotu:before {
+  content: "\e68d";
+}
+
+.icon-shengxiaolong:before {
+  content: "\e68e";
+}
+
+.icon-shengxiaoyang:before {
+  content: "\e68f";
+}
+
+.icon-shengxiaoshu:before {
+  content: "\e690";
+}
+
