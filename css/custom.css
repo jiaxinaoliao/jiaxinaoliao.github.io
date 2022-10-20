@@ -1,77 +1,49 @@
-@font-face {
-font-family: '小恐龙';
-src:
-url('/fonts/iconfont.woff2') format('woff2'),
-url('/fonts/iconfont.woff') format('woff'),
-url('/fonts/iconfont.ttf') format('truetype'),
-}
+@import "//at.alicdn.com/t/font_2264842_b004iy0kk2b.css";
 
 .iconfont {
-  font-family: "小恐龙" !important;
-  font-size: 16px;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+font-family: "iconfont" !important;
+font-size: 3em;
+/* 可以定义图标大小 */
+font-style: normal;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 }
-
-.icon-konglong:before {
-  content: "\e6ec";
+/* 若已经在项目设置中勾选了彩色选项，则无需再定义图标颜色*/
+.icon-rat:before {
+  color: #85c3de;
 }
-
-.icon-ma:before {
-  content: "\e61b";
+.icon-ox:before {
+  color: #ffaf6e;
 }
-
-.icon-ji:before {
-  content: "\e61e";
+.icon-tiger:before {
+  color: #f7c768;
 }
-
-.icon-shengxiaogou:before {
-  content: "\e685";
+.icon-rabbit:before {
+  color: #ffbdd8;
 }
-
-.icon-shengxiaohou:before {
-  content: "\e686";
+.icon-dragon:before {
+  color: #ff8787;
 }
-
-.icon-shengxiaohu:before {
-  content: "\e687";
+.icon-snake:before {
+  color: #c3d686;
 }
-
-.icon-shengxiaoma:before {
-  content: "\e688";
+.icon-horse:before {
+  color: #ffaf6e;
 }
-
-.icon-shengxiaoji:before {
-  content: "\e689";
+.icon-goat:before {
+  color: #f7c768;
 }
-
-.icon-shengxiaoshe:before {
-  content: "\e68a";
+.icon-monkey:before {
+  color: #c3d686;
 }
-
-.icon-shengxiaoniu:before {
-  content: "\e68b";
+.icon-rooster:before {
+  color: #ff8787;
 }
-
-.icon-shengxiaozhu:before {
-  content: "\e68c";
+.icon-dog:before {
+  color: #85c3de;
 }
-
-.icon-shengxiaotu:before {
-  content: "\e68d";
-}
-
-.icon-shengxiaolong:before {
-  content: "\e68e";
-}
-
-.icon-shengxiaoyang:before {
-  content: "\e68f";
-}
-
-.icon-shengxiaoshu:before {
-  content: "\e690";
+.icon-boar:before {
+  color: #ffbdd8;
 }
 
 /*iconfont默认样式*/
