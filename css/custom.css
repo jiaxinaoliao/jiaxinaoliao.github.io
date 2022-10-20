@@ -1,49 +1,33 @@
-@import "//at.alicdn.com/t/font_2264842_b004iy0kk2b.css";
-
-.iconfont {
-font-family: "iconfont" !important;
-font-size: 3em;
-/* 可以定义图标大小 */
-font-style: normal;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
+svg.icon.festival-decoration {
+    width: 3em;
+    height: 3em;
+    left: 2em;
+    margin-bottom: -3em;
+    display: block;
+    z-index: 100;
+    position: relative;
+    -webkit-animation: sway 1s infinite ease-in-out alternate;
+    animation: sway 1s infinite ease-in-out alternate;
 }
-/* 若已经在项目设置中勾选了彩色选项，则无需再定义图标颜色*/
-.icon-rat:before {
-  color: #85c3de;
+@-webkit-keyframes sway {
+  0% {
+    -webkit-transform: rotate(20deg);
+    transform-origin: center top;
+  }
+  100% {
+    -webkit-transform: rotate(-20deg);
+    transform-origin: center top;
+  }
 }
-.icon-ox:before {
-  color: #ffaf6e;
-}
-.icon-tiger:before {
-  color: #f7c768;
-}
-.icon-rabbit:before {
-  color: #ffbdd8;
-}
-.icon-dragon:before {
-  color: #ff8787;
-}
-.icon-snake:before {
-  color: #c3d686;
-}
-.icon-horse:before {
-  color: #ffaf6e;
-}
-.icon-goat:before {
-  color: #f7c768;
-}
-.icon-monkey:before {
-  color: #c3d686;
-}
-.icon-rooster:before {
-  color: #ff8787;
-}
-.icon-dog:before {
-  color: #85c3de;
-}
-.icon-boar:before {
-  color: #ffbdd8;
+@keyframes sway {
+  0% {
+    transform: rotate(20deg);
+    transform-origin: center top;
+  }
+  100% {
+    transform: rotate(-20deg);
+    transform-origin: center top;
+  }
 }
 
 /*iconfont默认样式*/
