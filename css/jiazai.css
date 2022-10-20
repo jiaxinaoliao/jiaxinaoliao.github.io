@@ -13,18 +13,15 @@
   background: #eaecf2;
   overflow: hidden;
 }
-
 .pace-inactive .pace-progress {
   opacity: 0;
   transition: 0.3s ease-in;
 }
-
 .pace.pace-inactive {
   opacity: 0;
   transition: 0.3s;
   top: -8px;
 }
-
 .pace .pace-progress {
   box-sizing: border-box;
   transform: translate3d(0, 0, 0);
@@ -37,12 +34,7 @@
   height: 100%;
   width: 100%;
   background: #49b1f5;
-  background: linear-gradient(
-    to right,
-    rgb(18, 194, 233),
-    rgb(196, 113, 237),
-    rgb(246, 79, 89)
-  );
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
   animation: gradient 2s ease infinite;
   background-size: 200%;
 }
