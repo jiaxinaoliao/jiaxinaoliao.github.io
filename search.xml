@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>powershell 去除版本信息</title>
+      <link href="/2022/10/26/powershell-%E5%8E%BB%E9%99%A4%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/"/>
+      <url>/2022/10/26/powershell-%E5%8E%BB%E9%99%A4%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/</url>
+      
+        <content type="html"><![CDATA[<h1 id="去除powershell的版本信息"><a href="#去除powershell的版本信息" class="headerlink" title="去除powershell的版本信息"></a>去除powershell的版本信息</h1><p>正常打开powershell的话会显示版本信息以及版权</p><img src="/2022/10/26/powershell-%E5%8E%BB%E9%99%A4%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/pwsh-1.png" class=""><p>要想去除的话只要在windows terminal的设置中</p><img src="/2022/10/26/powershell-%E5%8E%BB%E9%99%A4%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/pwsh-2.png" class=""><p>点击powershell的配置，打开右侧的命令行在后面加入<code>空格-nologo</code>即可</p><img src="/2022/10/26/powershell-%E5%8E%BB%E9%99%A4%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/pwsh-3.png" class=""><p>记得保存重新打开即可</p><img src="/2022/10/26/powershell-%E5%8E%BB%E9%99%A4%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/pwsh-4.png" class=""><p>再次打开就没有了</p><p><strong>注意：</strong>用oh-my-posh的话会有一些慢并且在vim里面打开的话还是默认有版本信息的，不建议去掉</p><p>去掉的话美化效果会出问题，对功能没有影响</p><img src="/2022/10/26/powershell-%E5%8E%BB%E9%99%A4%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/pwsh-5.png" class=""><p>会出现奇奇怪怪的样子不过只要clear一下就可以了，</p><p>不去掉的话不会出现这个问题</p><img src="/2022/10/26/powershell-%E5%8E%BB%E9%99%A4%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/pwsh-6.png" class="">]]></content>
+      
+      
+      <categories>
+          
+          <category> 编程入门 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> powershell </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>插件分享</title>
       <link href="/2022/10/25/%E6%8F%92%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
       <url>/2022/10/25/%E6%8F%92%E4%BB%B6%E5%88%86%E4%BA%AB/</url>
