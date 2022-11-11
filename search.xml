@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>windows下的包管理器scoop</title>
+      <link href="/2022/11/11/windows%E4%B8%8B%E7%9A%84%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8scoop/"/>
+      <url>/2022/11/11/windows%E4%B8%8B%E7%9A%84%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8scoop/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1-Scoop包管理器"><a href="#1-Scoop包管理器" class="headerlink" title="1 Scoop包管理器"></a>1 Scoop包管理器</h3><p>scoop是windows下的一个强大的包管理器可以方便快速的安装软件</p><h4 id="2-scoop安装"><a href="#2-scoop安装" class="headerlink" title="2 scoop安装"></a>2 scoop安装</h4><p>安装scoop很简单只需要在powershell中输入一条指令</p><p><code>iwr -useb get.scoop.sh | iex</code>即可自动安装</p><p>但是默认是在C盘安装所以在运行之前先要更改地址</p><p>并且要让powershell可以执行脚本需要输入</p><p><code>Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser</code></p><p>回车即可</p><p>之后依次输入下面的<strong>两条指令</strong>‘D:\ScoopApp\Scoop’单引号内部的地址可以更改为自己的地址其他的不要动</p><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$env:SCOOP</span>=<span class="string">&#x27;D:\ScoopApp\Scoop&#x27;</span></span><br><span class="line">[<span class="type">Environment</span>]::SetEnvironmentVariable(<span class="string">&#x27;SCOOP&#x27;</span>, <span class="variable">$env:SCOOP</span>, <span class="string">&#x27;User&#x27;</span>)</span><br></pre></td></tr></table></figure><p>第一条指令没有问题第二条指令也一样单引号内的地址可以更改可能需要管理员身份右键wt以管理身份运行即可（报错也没有关系可以忽略）</p><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$env:SCOOP_GLOBAL</span>=<span class="string">&#x27;D:\ScoopApp\GlobalScoopApps&#x27;</span> [<span class="type">Environment</span>]::SetEnvironmentVariable(<span class="string">&#x27;SCOOP_GLOBAL&#x27;</span>, <span class="variable">$env:SCOOP_GLOBAL</span>,<span class="string">&#x27;Machine&#x27;</span>)</span><br></pre></td></tr></table></figure><p>输入上两条指令之后再输入<code>iwr -useb get.scoop.sh | iex</code>即可开始安装scoop了</p><p>安装完成之后在’D:\ScoopApp\Scoop’（这里是刚刚自己选择的地方）的地方会有一个scoop的文件夹里面会有</p><ul><li>apps——所有通过scoop安装的软件都在里面。</li><li>buckets——管理软件的仓库，用于记录哪些软件可以安装、更新等信息，默认添加<code>main</code>仓库，主要包含无需GUI的软件，可手动添加其他仓库或自建仓库，具体在<a href="https://zhuanlan.zhihu.com/write#%E6%8E%A8%E8%8D%90%E8%BD%AF%E4%BB%B6%E4%BB%93%E5%BA%93">推荐软件仓库</a>中介绍。</li><li>cache——软件下载后安装包暂存目录。</li><li>persit——用于储存一些用户数据，不会随软件更新而替换。</li><li>shims——用于软链接应用，使应用之间不会互相干扰，实际使用过程中无用户操作不必细究。</li></ul><p>scoop有很多功能可以自行上网查看，这里只用几个最基本的需要用到的</p><ul><li>install——安装软件。</li><li>uninstall——卸载软件。</li><li>update——更新软件。可通过<code>scoop update *</code>更新所有已安装软件，或通过<code>scoop update</code>更新所有软件仓库资料及Scoop自身而不更新软件。</li></ul><p>比如需要安装git只需要在powershell中输入命令<code>scoop install git</code>即可</p><p>scoop + 命令 + 软件名称</p><p> 卸载的话就用<code>scoop uninstall git</code></p><p>还有一个search命令用来查找比如我想安装一个top可以先用<code>scoop search top</code>来查看那些包含top</p><p>比如找到了btop就可以用<code>scoop install btop</code>来安装了</p><img src="/2022/11/11/windows%E4%B8%8B%E7%9A%84%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8scoop/scoop-1.png" class="">]]></content>
+      
+      
+      <categories>
+          
+          <category> 编程入门 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windows终端插件分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>windows下比linux的htop更好用的top工具btop</title>
       <link href="/2022/11/11/windows%E4%B8%8B%E6%AF%94linux%E7%9A%84htop%E6%9B%B4%E5%A5%BD%E7%94%A8%E7%9A%84top%E5%B7%A5%E5%85%B7btop/"/>
       <url>/2022/11/11/windows%E4%B8%8B%E6%AF%94linux%E7%9A%84htop%E6%9B%B4%E5%A5%BD%E7%94%A8%E7%9A%84top%E5%B7%A5%E5%85%B7btop/</url>
@@ -20,7 +45,7 @@
       
         <tags>
             
-            <tag> 终端插件分享 </tag>
+            <tag> windows终端插件分享 </tag>
             
         </tags>
       
