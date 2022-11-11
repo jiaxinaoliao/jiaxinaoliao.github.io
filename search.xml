@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>windows下比linux的htop更好用的top工具btop</title>
+      <link href="/2022/11/11/windows%E4%B8%8B%E6%AF%94linux%E7%9A%84htop%E6%9B%B4%E5%A5%BD%E7%94%A8%E7%9A%84top%E5%B7%A5%E5%85%B7btop/"/>
+      <url>/2022/11/11/windows%E4%B8%8B%E6%AF%94linux%E7%9A%84htop%E6%9B%B4%E5%A5%BD%E7%94%A8%E7%9A%84top%E5%B7%A5%E5%85%B7btop/</url>
+      
+        <content type="html"><![CDATA[<p>一款炫酷的性能测试监控分析工具——btop</p><p>linux的top命令，作为我们性能分析的入门命令，一般都是大家首先使用的。但是，top命令的结果，只有和白色，颜色很单一，linux下有htop</p><p>windows下怎么达到同样的效果呢，可以通过scoop安装btop</p><p>btop，可以通过不同颜色、显示处理器、内存、磁盘、网络和进程的使用情况和统计信息的资源监视器。C++<a href="https://github.com/aristocratos/bashtop">bashtop</a>和<a href="https://github.com/aristocratos/bpytop">bpytop</a>的版本和延续。</p><p>在windows下直接用scoop安装即可<code>scoop install btop</code></p><img src="/2022/11/11/windows%E4%B8%8B%E6%AF%94linux%E7%9A%84htop%E6%9B%B4%E5%A5%BD%E7%94%A8%E7%9A%84top%E5%B7%A5%E5%85%B7btop/btop-1.png" class=""><table><thead><tr><th>m</th><th>打开选项参数</th></tr></thead><tbody><tr><td>o</td><td>进入窗口颜色、数据刷新频率等相关配置</td></tr><tr><td>h</td><td>打开帮助</td></tr><tr><td>ctrl + z</td><td>停止进程</td></tr><tr><td>ctrl + c、q</td><td>退出</td></tr><tr><td>-</td><td>减少页面数据刷新间隔，默认2s秒</td></tr><tr><td>+</td><td>增加页面数据刷新间隔</td></tr><tr><td>f，&#x2F;</td><td>开启进程搜索模式，输入搜索关键词，可以搜索进程</td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> 编程入门 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 终端插件分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>win11快捷键大全</title>
       <link href="/2022/11/02/win11%E5%85%A8%E9%83%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
       <url>/2022/11/02/win11%E5%85%A8%E9%83%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
