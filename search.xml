@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>arch linux关机遇到(A stop job is running for ...)</title>
+      <link href="/2023/05/29/arch-linux%E5%85%B3%E6%9C%BA%E9%81%87%E5%88%B0-A-stop-job-is-running-for/"/>
+      <url>/2023/05/29/arch-linux%E5%85%B3%E6%9C%BA%E9%81%87%E5%88%B0-A-stop-job-is-running-for/</url>
+      
+        <content type="html"><![CDATA[<h1 id="arch-linux"><a href="#arch-linux" class="headerlink" title="arch linux"></a>arch linux</h1><p>arch linux在关机重启的时候经常遇到(A stop job is running for …)<br>等待很长时间都没有办法关闭，导致关机很慢。</p><p>编辑<code>/etc/systemd/system.conf</code>文件找到并修改</p><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">DefaultTimeoutStartSec=10s</span><br><span class="line">DefaultTimeoutStopSec=10s</span><br><span class="line"></span><br><span class="line">之后保存退出执行</span><br><span class="line"></span><br><span class="line">systemctl daemon-reload</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> arch linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> arch linux安装教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>arch linux声音与背光亮度Fn调节（dwm）</title>
       <link href="/2023/05/29/arch-linux%E5%A3%B0%E9%9F%B3%E4%B8%8E%E8%83%8C%E5%85%89%E4%BA%AE%E5%BA%A6Fn%E8%B0%83%E8%8A%82/"/>
       <url>/2023/05/29/arch-linux%E5%A3%B0%E9%9F%B3%E4%B8%8E%E8%83%8C%E5%85%89%E4%BA%AE%E5%BA%A6Fn%E8%B0%83%E8%8A%82/</url>
