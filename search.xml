@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>arch linux声音与背光亮度Fn调节（dwm）</title>
+      <link href="/2023/05/29/arch-linux%E5%A3%B0%E9%9F%B3%E4%B8%8E%E8%83%8C%E5%85%89%E4%BA%AE%E5%BA%A6Fn%E8%B0%83%E8%8A%82/"/>
+      <url>/2023/05/29/arch-linux%E5%A3%B0%E9%9F%B3%E4%B8%8E%E8%83%8C%E5%85%89%E4%BA%AE%E5%BA%A6Fn%E8%B0%83%E8%8A%82/</url>
+      
+        <content type="html"><![CDATA[<h1 id="第一部分安装声音与亮度工具"><a href="#第一部分安装声音与亮度工具" class="headerlink" title="第一部分安装声音与亮度工具"></a>第一部分安装声音与亮度工具</h1><p>arch+dwm中</p><p>首先是安装声音和亮度的工具这里用的是alsa和light</p><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo pacman -S alsa alsa-utils light</span><br></pre></td></tr></table></figure><h1 id="1、声音部分"><a href="#1、声音部分" class="headerlink" title="1、声音部分"></a>1、声音部分</h1><p>安装之后可以通过alamixer打开声音控制的图形界面</p><p>也可以用amixer来调整</p><p>这里我们用amixer来调整</p><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">amixer sset Master 5%+ unmute (音量加)</span><br><span class="line">amixer sset Master 5%- unmute (音量减)</span><br><span class="line">amixer sset Master toggle (静音切换)</span><br></pre></td></tr></table></figure><p>我这里不知道为什么关闭Master的时候Speacker也会一起静音所以我这里静音切换用</p><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">amixer sset Master toggle &amp;&amp; amixer sset Speacker unmute</span><br></pre></td></tr></table></figure><p>我们可以用shell脚本来设置也可以直接在dwm的配置中设置，这里我们直接去改配置就行</p><p>首先要确定我们的笔记本键盘的功能键在linux中的名称比如</p><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">我这里是</span><br><span class="line">Fn+F6 (音量加)</span><br><span class="line">Fn+F5 (音量减)</span><br><span class="line">Fn+F4 (静音切换)</span><br></pre></td></tr></table></figure><p>先打开一个终端输入命令<code>xev</code>可以看到一个空白输入当按下Fn+F6（有些笔记本可能不需要加Fn就是功能键，看个人的bios设置，可能Fn+F1&#x3D;F1也有可能Fn+F1&#x3D;对应功能，根据自己笔记本去按就可以l）</p><p>当按下之后可以看到终端中显示出如下的结果我们主要看keysym之后的十六进制数即可我这里按下Fn+F6（音量加）显示的是（keysym 0x1008ff13, 截图错了）我们根据这个数去查找名称</p><img src="/2023/05/29/arch-linux%E5%A3%B0%E9%9F%B3%E4%B8%8E%E8%83%8C%E5%85%89%E4%BA%AE%E5%BA%A6Fn%E8%B0%83%E8%8A%82/2023-05-29_15-04.png" class=""><p><img src="/arch-linux%E5%A3%B0%E9%9F%B3%E4%B8%8E%E8%83%8C%E5%85%89%E4%BA%AE%E5%BA%A6Fn%E8%B0%83%E8%8A%82/2023-05-29_15-04.png" alt="2023-05-29_15-04"></p><p>我们可以去<code>/usr/include/X11/XF86keysym.h</code>头文件中查看</p><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim /usr/include/X11/XF86keysym.h</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>打开之后搜索（&#x2F;）x1008ff13</p><img src="/2023/05/29/arch-linux%E5%A3%B0%E9%9F%B3%E4%B8%8E%E8%83%8C%E5%85%89%E4%BA%AE%E5%BA%A6Fn%E8%B0%83%E8%8A%82/2023-05-29_15-12.png" class=""><p><img src="/arch-linux%E5%A3%B0%E9%9F%B3%E4%B8%8E%E8%83%8C%E5%85%89%E4%BA%AE%E5%BA%A6Fn%E8%B0%83%E8%8A%82/2023-05-29_15-12.png" alt="2023-05-29_15-12"></p><p>这里可以看到按键名称在数值前面,我这里Fn+F6就是XF86XK_AudioRaiseVolume</p><p>之后我们去dwm的文件加中设置即可</p><p>首先需要在dwm.c文件中添加<code>#include &lt;X11/XF86keysym.h&gt;</code>(注意是dwm.c中不是drw)</p><img src="/2023/05/29/arch-linux%E5%A3%B0%E9%9F%B3%E4%B8%8E%E8%83%8C%E5%85%89%E4%BA%AE%E5%BA%A6Fn%E8%B0%83%E8%8A%82/2023-05-29_15-15.png" class=""><p><img src="/arch-linux%E5%A3%B0%E9%9F%B3%E4%B8%8E%E8%83%8C%E5%85%89%E4%BA%AE%E5%BA%A6Fn%E8%B0%83%E8%8A%82/2023-05-29_15-15.png" alt="2023-05-29_15-15"></p><p>然后打开dwm的配置文件<code>vim config.h</code></p><p>中按键设置的位置添加</p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">&#123; <span class="number">0</span>, XF86XK_AudioRaiseVolume,  spawn, SHCMD(<span class="string">&quot;amixer sset Master 2%+ unmute&quot;</span>) &#125;,</span><br><span class="line">&#123; <span class="number">0</span>, XF86XK_AudioLowerVolume,  spawn, SHCMD(<span class="string">&quot;amixer sset Master 2%- unmute&quot;</span>) &#125;,</span><br><span class="line">&#123; <span class="number">0</span>, XF86XK_AudioMute,         spawn, SHCMD(<span class="string">&quot;amixer sset Master toggle &amp;&amp; amixer sset Speaker unmute&quot;</span>) &#125;,</span><br></pre></td></tr></table></figure><p>之后保存推出然后<code>sudo make clean install</code>重新进入即可</p><h1 id="2、亮度部分"><a href="#2、亮度部分" class="headerlink" title="2、亮度部分"></a>2、亮度部分</h1><p>亮度调整用的是light</p><p>使用之前需要把我们当前用户添加到video组中</p><p><code>sudo usermod -a -G video username</code>(这里username换成直接的用户名)</p><p>添加之后就可以用light了我们这里常用的参数有三个</p><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">light -A 数值 （增加百分之xx）</span><br><span class="line">light -U 数值 （减少百分之xx）</span><br><span class="line">light -S 数值 （设置到百分之xx）</span><br></pre></td></tr></table></figure><p>和上面声音同理得到按键的名称之后直接去dwm的配置文件中config.h写入</p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">&#123; <span class="number">0</span>, XF86XK_MonBrightnessUp,   spawn, SHCMD(<span class="string">&quot;light -A 2&quot;</span>) &#125;,</span><br><span class="line">&#123; <span class="number">0</span>, XF86XK_MonBrightnessDown, spawn, SHCMD(<span class="string">&quot;light -U 2&quot;</span>) &#125;,</span><br></pre></td></tr></table></figure><p>之后<code>sudo make clean install</code>重新进入即可</p><p><strong>注意</strong>这里用的是笔记本自带的键盘外界键盘有些有驱动可以修改，有些没有官方驱动修改起来是比较麻烦的</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> arch linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> arch linux安装教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>arch linux安装（到U盘中）教程（四 输入法以及背景设置）</title>
       <link href="/2023/01/12/arch-linux%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E5%9B%9B/"/>
       <url>/2023/01/12/arch-linux%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E5%9B%9B/</url>
