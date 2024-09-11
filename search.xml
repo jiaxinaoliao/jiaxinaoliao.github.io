@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>kali-linux安装到U盘中</title>
+      <link href="/2024/09/11/kali-linux%E5%AE%89%E8%A3%85%E5%88%B0U%E7%9B%98%E4%B8%AD/"/>
+      <url>/2024/09/11/kali-linux%E5%AE%89%E8%A3%85%E5%88%B0U%E7%9B%98%E4%B8%AD/</url>
+      
+        <content type="html"><![CDATA[<h1 id="kali-linux安装到U盘中"><a href="#kali-linux安装到U盘中" class="headerlink" title="kali-linux安装到U盘中"></a>kali-linux安装到U盘中</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>由于手上正好有一个固态U盘，还有一些时间，就决定折腾一下kali，俗话说的好kali学的好，入狱入的早</p><p>但是又不想用虚拟机装kali第一是性能问题风扇噪音太大，第二是总感觉怪怪的。所以就直接把kali装到固态U盘里，相当于半个实体机安装了。优点就是便携，缺点就是换系统需要重启，看个人需求吧。</p><h2 id="1、准备工作"><a href="#1、准备工作" class="headerlink" title="1、准备工作"></a>1、准备工作</h2><p>1、首先要准备一个高速U盘或者固态硬盘（固态+硬盘盒）都可以，速度快一点就行，我这里用的是移速的512gb固态U盘还是挺不错的</p><p>2、将U盘分好区安装好ventoy</p><p>3、准备一个kali的iso</p><h2 id="2、安装ventoy"><a href="#2、安装ventoy" class="headerlink" title="2、安装ventoy"></a>2、安装ventoy</h2><p>首先去ventoy的官网<a href="https://www.ventoy.net/cn/download.html%E4%B8%8B%E8%BD%BD%E4%B8%80%E4%B8%AAventoy%E7%84%B6%E5%90%8E%E6%8F%92%E5%85%A5u%E7%9B%98%E8%BF%90%E8%A1%8C">https://www.ventoy.net/cn/download.html下载一个ventoy然后插入u盘运行</a></p><p><img src="/kali-linux%E5%AE%89%E8%A3%85%E5%88%B0U%E7%9B%98%E4%B8%AD/image-20240911173129437.png" alt="image-20240911173129437"></p><p><strong>运行之前务必确保U盘中没有重要资料</strong></p><p><strong>运行之前务必确保U盘中没有重要资料</strong></p><p><strong>运行之前务必确保U盘中没有重要资料</strong></p><p><img src="/kali-linux%E5%AE%89%E8%A3%85%E5%88%B0U%E7%9B%98%E4%B8%AD/image-20240911173240678.png" alt="image-20240911173240678"></p><p><img src="/kali-linux%E5%AE%89%E8%A3%85%E5%88%B0U%E7%9B%98%E4%B8%AD/image-20240911173306117.png" alt="image-20240911173306117"></p><p>然后分区类型建议选gpt，分区设置可以根据U盘大小在后面留出大概五六十GB的空间给kali系统</p><p>这样的话前面的空间还是可以当正常U盘来使用的</p><p>之后安装即可</p><h2 id="3、准备kali安装镜像"><a href="#3、准备kali安装镜像" class="headerlink" title="3、准备kali安装镜像"></a>3、准备kali安装镜像</h2><p>我们可以直接去kali的官网下载<a href="https://www.kali.org/get-kali/#kali-platforms">https://www.kali.org/get-kali/#kali-platforms</a></p><p><img src="/kali-linux%E5%AE%89%E8%A3%85%E5%88%B0U%E7%9B%98%E4%B8%AD/image-20240911173632342.png" alt="image-20240911173632342"></p><p><img src="/kali-linux%E5%AE%89%E8%A3%85%E5%88%B0U%E7%9B%98%E4%B8%AD/image-20240911173655151.png" alt="image-20240911173655151"></p><p>选择最常用的版本就行</p><p>但是kali官网下载十分的慢，有两种解决方法第一种可以利用工具下载，或者我们直接去清华的开源软件镜像站下载</p><p><a href="https://mirrors.tuna.tsinghua.edu.cn/">https://mirrors.tuna.tsinghua.edu.cn/</a></p><p><img src="/kali-linux%E5%AE%89%E8%A3%85%E5%88%B0U%E7%9B%98%E4%B8%AD/image-20240911173849590.png" alt="image-20240911173849590"></p><p>我们选择合适的版本下载即可</p><p>之后将下载好的iso放入安装完ventoy的U盘中可以在里面创建一个iso文件夹将所有的iso文件都放到里面</p><h2 id="4、安装kali系统"><a href="#4、安装kali系统" class="headerlink" title="4、安装kali系统"></a>4、安装kali系统</h2><p>所有准备工作做好之后就可以开始安装kali了，重启电脑进入biso模式（每个品牌电脑不一样一般是开机的时候频繁的按F12）</p><p>之后通过安装ventoy的U盘启动，启动之后就可以看见我们刚刚下载的kali的iso镜像了，我们选择正常启动就行进入kali</p><p>进入kali之后U盘版本的iso默认是live正常启动类似于windows的pe，不能保存数据不能永久化，我们选择第三个还是第四个install，安装的方式打开，然后就和windows安装一样了，基本上一直下一步就行，这里注意的是kali安装是需要联网的，笔记本的话有可能是找不到网卡驱动的，这里最简单直接的办法就是插网线（超级省事）</p><p>基本流程就是先选择语言-&gt;地区-&gt;键盘</p><p>然后就是网络地址可以空着</p><p>名字可以随便写</p><p>然后是域名也可以随便写</p><p>然后创建用户名以及密码</p><p>之后就是分区，分区的时候要注意，我们选择自定义，然后选择我们刚刚U盘留出来的内一部分，之后用默认分区就行（一般就是一个efi，一个主分区，一个swap）然后就一直yes就OK了</p><h2 id="5、从U盘中启动kali"><a href="#5、从U盘中启动kali" class="headerlink" title="5、从U盘中启动kali"></a>5、从U盘中启动kali</h2><p>刚安装好之后的kali默认是会从kali的efi引导启动，但是之后的话正常的电脑是会默认从windows启动的，也就是说不会影响我们主系统的使用的。</p><p>安装好之后如果进入biso从U盘启动的话默认用的是ventoy的引导，这里的话有三种解决方案（推荐第三种）</p><h3 id="第一种"><a href="#第一种" class="headerlink" title="第一种"></a>第一种</h3><p>第一种方式比较简单就是直接把efi文件放到ventoyU盘的iso文件夹中，在windows中利用（DiskGenius工具)将正常应该是第三个分区中的efi文件复制到桌面然后改个名字再放入U盘的iso文件夹中</p><p><img src="/kali-linux%E5%AE%89%E8%A3%85%E5%88%B0U%E7%9B%98%E4%B8%AD/image-20240911181047570.png" alt="image-20240911181047570"></p><p><img src="/kali-linux%E5%AE%89%E8%A3%85%E5%88%B0U%E7%9B%98%E4%B8%AD/image-20240911181203327.png" alt="image-20240911181203327"></p><p>之后通过U盘启动的方式直接选择这个文件即可</p><p><img src="/kali-linux%E5%AE%89%E8%A3%85%E5%88%B0U%E7%9B%98%E4%B8%AD/f180e5f3824e6b480c9482369b74f016_compress.jpg" alt="img"></p><h3 id="第二种"><a href="#第二种" class="headerlink" title="第二种"></a>第二种</h3><p>第二种方法的话什么都不用改，每次从U盘启动的时候按F2手动去找这个efi文件也是可以的</p><p><img src="/kali-linux%E5%AE%89%E8%A3%85%E5%88%B0U%E7%9B%98%E4%B8%AD/cd9c83812037593030b2d8c35e718cda_compress.jpg" alt="img"></p><p>一般就是这个512MB的分区选择里面的&#x2F;EFI&#x2F;xxx.efi文件即可</p><h3 id="第三种"><a href="#第三种" class="headerlink" title="第三种"></a>第三种</h3><p>以上两种方式的实际使用过程中会有一些问题，就是如果换了一台电脑很容易找不到系统直接进入grub</p><p>第三种方式稍微复杂一点</p><p>需要我们在U盘中创建一个ventoy的文件夹</p><p><img src="/kali-linux%E5%AE%89%E8%A3%85%E5%88%B0U%E7%9B%98%E4%B8%AD/image-20240911181731822.png" alt="image-20240911181731822"></p><p>里面创建一个ventoy_grub.cfg的配置文件</p><p><img src="/kali-linux%E5%AE%89%E8%A3%85%E5%88%B0U%E7%9B%98%E4%B8%AD/image-20240911181749823.png" alt="image-20240911181749823"></p><p>配置文件中将UUID改成自己kali根目录主分区的uuid</p><p>然后再kali系统里面看一下&#x2F;boot&#x2F;里面这两个文件的具体名称换一下自己对应的名称即可</p><p><img src="/kali-linux%E5%AE%89%E8%A3%85%E5%88%B0U%E7%9B%98%E4%B8%AD/image-20240911182000483.png" alt="image-20240911182000483"></p><p>之后通过U盘启动然后按F6即可进入自定义菜单</p><p><img src="/kali-linux%E5%AE%89%E8%A3%85%E5%88%B0U%E7%9B%98%E4%B8%AD/d5a5649612af450bee67676c828bdd47_compress.jpg" alt="img"></p><p>我们直接选择kali linux启动即可</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> kali </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> kali linux安装教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>neovim快速配置教程</title>
       <link href="/2023/12/07/neovim%E5%BF%AB%E9%80%9F%E9%85%8D%E7%BD%AE/"/>
       <url>/2023/12/07/neovim%E5%BF%AB%E9%80%9F%E9%85%8D%E7%BD%AE/</url>
