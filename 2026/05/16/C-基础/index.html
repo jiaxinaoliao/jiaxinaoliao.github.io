@@ -1,0 +1,570 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>C++基础 | 贾心奥利奥Ψ兔兔</title><meta name="keywords" content="OI相关"><meta name="author" content="Jia Ao"><meta name="copyright" content="Jia Ao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="第一部分 C++基础第一章 输入输出C++ 是 C 的一个超集，事实上，任何合法的 C 程序都是合法的 C++ 程序。 1.1 开始框架1.1.1 基本概念C++ 是一种静态类型的、编译式的、通用的、大小写敏感的、不规则的编程语言，支持过程化编程、面向对象编程和泛型编程。 C++ 被认为是一种中级语言，它综合了高级语言和低级语言的特点。 C++ 是由 Bjarne Stroustrup 于 197">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++基础">
+<meta property="og:url" content="http://example.com/2026/05/16/C-%E5%9F%BA%E7%A1%80/index.html">
+<meta property="og:site_name" content="贾心奥利奥Ψ兔兔">
+<meta property="og:description" content="第一部分 C++基础第一章 输入输出C++ 是 C 的一个超集，事实上，任何合法的 C 程序都是合法的 C++ 程序。 1.1 开始框架1.1.1 基本概念C++ 是一种静态类型的、编译式的、通用的、大小写敏感的、不规则的编程语言，支持过程化编程、面向对象编程和泛型编程。 C++ 被认为是一种中级语言，它综合了高级语言和低级语言的特点。 C++ 是由 Bjarne Stroustrup 于 197">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/photo/background/71.png">
+<meta property="article:published_time" content="2026-05-16T01:41:33.000Z">
+<meta property="article:modified_time" content="2026-05-16T01:45:05.971Z">
+<meta property="article:author" content="Jia Ao">
+<meta property="article:tag" content="OI相关">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/photo/background/71.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2026/05/16/C-%E5%9F%BA%E7%A1%80/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.clarity.ms"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "e6351zvwuc");</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":33,"languages":{"author":"作者: Jia Ao","link":"链接: ","source":"来源: 贾心奥利奥Ψ兔兔","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'C++基础',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2026-05-16 09:45:05'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/jiazai.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/photo/touxiang.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/box/"><i class="fa-fw fas fa-book"></i><span> 程序员</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/photo/background/71.png')"><nav id="nav"><span id="blog_name"></span><span id="blog_name"><a id="site-name" onclick="btf.scrollToDest(0, 500)" data-title="欢迎光临兔兔小窝，愿你有愉快的一天">C++基础</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/box/"><i class="fa-fw fas fa-book"></i><span> 程序员</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">C++基础</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-05-16T01:41:33.000Z" title="发表于 2026-05-16 09:41:33">2026-05-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-05-16T01:45:05.971Z" title="更新于 2026-05-16 09:45:05">2026-05-16</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/C-OI/">C++ OI</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">4.9k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>18分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="C++基础"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="第一部分-C-基础"><a href="#第一部分-C-基础" class="headerlink" title="第一部分 C++基础"></a>第一部分 C++基础</h1><h2 id="第一章-输入输出"><a href="#第一章-输入输出" class="headerlink" title="第一章 输入输出"></a>第一章 输入输出</h2><p>C++ 是 C 的一个超集，事实上，任何合法的 C 程序都是合法的 C++ 程序。</p>
+<h3 id="1-1-开始框架"><a href="#1-1-开始框架" class="headerlink" title="1.1 开始框架"></a>1.1 开始框架</h3><h4 id="1-1-1-基本概念"><a href="#1-1-1-基本概念" class="headerlink" title="1.1.1 基本概念"></a>1.1.1 基本概念</h4><p>C++ 是一种静态类型的、编译式的、通用的、大小写敏感的、不规则的编程语言，支持过程化编程、面向对象编程和泛型编程。</p>
+<p>C++ 被认为是一种<strong>中级</strong>语言，它综合了高级语言和低级语言的特点。</p>
+<p>C++ 是由 Bjarne Stroustrup 于 1979 年在新泽西州美利山贝尔实验室开始设计开发的。C++ 进一步扩充和完善了 C 语言，最初命名为带类的C，后来在 1983 年更名为 C++。</p>
+<p>C++ 是 C 的一个超集，事实上，任何合法的 C 程序都是合法的 C++ 程序。</p>
+<p><strong>注意：</strong>使用静态类型的编程语言是在编译时执行类型检查，而不是在运行时执行类型检查。</p>
+<h5 id="面向对象程序设计"><a href="#面向对象程序设计" class="headerlink" title="面向对象程序设计"></a>面向对象程序设计</h5><p>C++ 完全支持面向对象的程序设计，包括面向对象开发的四大特性：</p>
+<ul>
+<li>封装</li>
+<li>抽象</li>
+<li>继承</li>
+<li>多态</li>
+</ul>
+<p>减少代码量&#x2F;提高复用性</p>
+<h5 id="标准库"><a href="#标准库" class="headerlink" title="标准库"></a>标准库</h5><p>标准的 C++ 由三个重要部分组成：</p>
+<ul>
+<li>核心语言，提供了所有构件块，包括变量、数据类型和常量，等等。</li>
+<li>C++ 标准库，提供了大量的函数，用于操作文件、字符串等。</li>
+<li>标准模板库（STL），提供了大量的方法，用于操作数据结构等。</li>
+</ul>
+<h5 id="ANSI-标准"><a href="#ANSI-标准" class="headerlink" title="ANSI 标准"></a>ANSI 标准</h5><p>ANSI 标准是为了确保 C++ 的便携性 —— 您所编写的代码在 Mac、UNIX、Windows、Alpha 计算机上都能通过编译。</p>
+<p>由于 ANSI 标准已稳定使用了很长的时间，所有主要的 C++ 编译器的制造商都支持 ANSI 标准。</p>
+<h5 id="学习-C"><a href="#学习-C" class="headerlink" title="学习 C++"></a>学习 C++</h5><p>学习 C++，关键是要理解概念，而不应过于深究语言的技术细节。</p>
+<p>学习程序设计语言的目的是为了成为一个更好的程序员，也就是说，是为了能更有效率地设计和实现新系统，以及维护旧系统。</p>
+<p>C++ 支持多种编程风格。您可以使用 Fortran、C、Smalltalk 等任意一种语言的编程风格来编写代码。每种风格都能有效地保证运行时间效率和空间效率。</p>
+<h5 id="C-的使用"><a href="#C-的使用" class="headerlink" title="C++ 的使用"></a>C++ 的使用</h5><p>基本上每个应用程序领域的程序员都有使用 C++。</p>
+<p>C++ 通常用于编写设备驱动程序和其他要求实时性的直接操作硬件的软件。</p>
+<p>C++ 广泛用于教学和研究。</p>
+<p>任何一个使用苹果电脑或 Windows PC 机的用户都在间接地使用 C++，因为这些系统的主要用户接口是使用 C++ 编写的。</p>
+<h4 id="1-1-2-C-程序框架"><a href="#1-1-2-C-程序框架" class="headerlink" title="1.1.2 C++程序框架"></a>1.1.2 C++程序框架</h4><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// system(&quot;pause&quot;);</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="1-1-3-编译运行程序"><a href="#1-1-3-编译运行程序" class="headerlink" title="1.1.3 编译运行程序"></a>1.1.3 编译运行程序</h4><p>  主函数main和return返还值0为没有错误非0的一般由系统定义，通常指出系统错误。</p>
+<h3 id="1-2-初识C-的输入输出"><a href="#1-2-初识C-的输入输出" class="headerlink" title="1.2 初识C++的输入输出"></a>1.2 初识C++的输入输出</h3><h4 id="1-2-1-C-输入输出库"><a href="#1-2-1-C-输入输出库" class="headerlink" title="1.2.1 C++输入输出库"></a>1.2.1 C++输入输出库</h4><p>  c++语言并未定义任何输入输出（IO）语句，取而代之，包含了一个全面的标准库来提供IO机制（以及很多其他设施），本章只了解一部分基本概念和操作。</p>
+<h4 id="1-2-2-C-输入"><a href="#1-2-2-C-输入" class="headerlink" title="1.2.2 C++输入"></a>1.2.2 C++输入</h4><p>  标准库中定义了四个IO对象，</p>
+<ol>
+<li><p>cin为istream类型的对象，这个对象也被称为&#x3D;&#x3D;<strong>标准输入</strong>&#x3D;&#x3D;。</p>
+</li>
+<li><p>cout为ostream类型的对象，这个对象也被称为&#x3D;&#x3D;<strong>标准输出</strong>&#x3D;&#x3D;。</p>
+</li>
+<li><p>cerr通常用来输出警告和错误，被称为&#x3D;&#x3D;<strong>标准错误</strong>&#x3D;&#x3D;。</p>
+</li>
+<li><p>clog用来输出程序运行时的一般性信息。</p>
+</li>
+</ol>
+<p>  系统通常会将程序运行的窗口与这些对象联系起来。因此，当我们通过cin，数据将从程序正在运行的窗口读入，当我们像cout，cerr，clog写入数据时，将会写到同一个窗口。</p>
+<h4 id="1-2-3-C-输出"><a href="#1-2-3-C-输出" class="headerlink" title="1.2.3 C++输出"></a>1.2.3 C++输出</h4><p>  想要使用输入出输出（iostream）库必须要添加一个<strong>头文件</strong>（header）#include指令必须出现在所有函数之外。一般将一个程序的所有#include指令都放在完文件的开始。</p>
+<h4 id="1-2-4-输出符号"><a href="#1-2-4-输出符号" class="headerlink" title="1.2.4 输出符号"></a>1.2.4 输出符号</h4><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;输入两个数字:&quot;</span> &lt;&lt; endl;</span><br><span class="line">    <span class="type">int</span> v1 = <span class="number">0</span>, v2 = <span class="number">0</span>;</span><br><span class="line">    cin &gt;&gt; v1 &gt;&gt; v2;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;第一个数&quot;</span> &lt;&lt; v1 &lt;&lt; <span class="string">&quot;和第二个数&quot;</span> &lt;&lt; v2 </span><br><span class="line">              &lt;&lt; <span class="string">&quot;的和是&quot;</span> &lt;&lt; v1 + v2 &lt;&lt; endl;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>  其中main的函数体的第一条语句执行了一个<strong>表达式</strong>。在c++中一个表达式产生一个计算结果，它由一个或多个运算对象和一个运算符组成。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">cout &lt;&lt; <span class="string">&quot;输入两个数字:&quot;</span> &lt;&lt; endl;</span><br></pre></td></tr></table></figure>
+
+<p> 这条语句使用了<strong>输出运算符</strong>（&lt;&lt;）在标准输出上打印消息。</p>
+<p> &lt;&lt; 运算符接受两个运算对象：</p>
+<ul>
+<li><p><strong>左侧</strong>：运算对象必须是一个ostream对象。</p>
+</li>
+<li><p><strong>右侧</strong>：运算对象为要打印的值。</p>
+</li>
+</ul>
+<p>  此运算符将给定的值写到给定的ostream（<strong>左侧</strong>）对象中，输出运算符的计算结果就是其左侧运算对象（ostream）。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">cout &lt;&lt; <span class="string">&quot;输入两个数字:&quot;</span> &lt;&lt; endl;</span><br></pre></td></tr></table></figure>
+
+<p>  第一个输出运算符是打印一条消息，这个消息是一个<strong>字符串字面值常量</strong>。</p>
+<p><strong>字符串字面值常量</strong>：是一对用双引号包围的字符序列，在双引号之间的文本被打印到标准输出。</p>
+<p>  第二个输出运算符打印endl，这是一个被称为<strong>操纵符</strong>的特殊值。</p>
+<p><strong>操纵符</strong>：是为了结束当前行（相当于换行），并将与设备关联的<a href="%E5%86%85%E5%AD%98%E5%9B%9B%E5%8C%BA%E3%80%82">^ 缓冲区</a>中的内容冲刷到设备中。</p>
+<h4 id="1-2-5-使用标准库中的名字"><a href="#1-2-5-使用标准库中的名字" class="headerlink" title="1.2.5 使用标准库中的名字"></a>1.2.5 使用标准库中的名字</h4><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br></pre></td></tr></table></figure>
+
+<p>  这句话指出cout和endl等是定义在名为std的<strong>命名空间</strong>。</p>
+<p><strong>命名空间</strong>： 可以帮助我们避免不经意的名字定义冲突，以及使用库中相同名字导致的冲突。标准库定义的所有名字都在命名空间std中。</p>
+<p>  通过标准空间使用标准库有一个副作用，当使用标准库中的一个名字时，必须显式说明我们想使用来自命名空间std中的名字。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">std :: cout &lt;&lt; <span class="string">&quot;输入两个数字:&quot;</span> &lt;&lt; endl;</span><br></pre></td></tr></table></figure>
+
+<p>通过（::）<strong>作用域运算符</strong>来指出我们想使用的定义在命名空间std中的名字cout</p>
+<p>而使用</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br></pre></td></tr></table></figure>
+
+<p>  写在开头可以省略std:: 。</p>
+<h4 id="1-2-6-输入符号"><a href="#1-2-6-输入符号" class="headerlink" title="1.2.6 输入符号"></a>1.2.6 输入符号</h4><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">cin &gt;&gt; v1 &gt;&gt; v2;</span><br></pre></td></tr></table></figure>
+
+<p><strong>输入运算符</strong>（&gt;&gt;）和输出运算符类似</p>
+<p><strong>输入运算符：</strong></p>
+<ul>
+<li>左侧：接受一个istream作为运算对象。</li>
+<li>右侧：接受一个对象作为运算对象。</li>
+</ul>
+<p>此式等价于</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">(  cin &gt;&gt; v1 )&gt;&gt; v2;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">cin &gt;&gt; v1;</span><br><span class="line">cin &gt;&gt; v2;</span><br></pre></td></tr></table></figure>
+
+<p>其作用为通过cin读取两个值并且将第一个值存入v1，讲第二个值存入v2中。</p>
+<h3 id="1-3-注释"><a href="#1-3-注释" class="headerlink" title="1.3 注释"></a>1.3 注释</h3><h4 id="1-3-1-注释简介"><a href="#1-3-1-注释简介" class="headerlink" title="1.3.1 注释简介"></a>1.3.1 注释简介</h4><p>  注释是用于解释代码段的意思便于读者理解，但是编译器会忽视。</p>
+<h4 id="1-3-2-C-注释种类"><a href="#1-3-2-C-注释种类" class="headerlink" title="1.3.2 C++注释种类"></a>1.3.2 C++注释种类</h4><p>  c++中注释有两种：<strong>单行注释</strong>和<strong>多行注释</strong></p>
+<ol>
+<li><p>单行注释</p>
+<p>以双斜线（&#x2F;&#x2F;）开始，以换行符结束。</p>
+<p>也就是说当前行双斜线右侧的所有内容都会被编译器忽略。</p>
+<p>这种注释可以包括任何文本。</p>
+<p>常用于半行和单行注释</p>
+</li>
+<li><p>多行注释</p>
+<p>这种注释继承于C语言的两个定界符（&#x2F;* 和 *&#x2F;）。这种注释以 &#x2F;* 开始，以 *&#x2F; 结束，可以包含除了 *&#x2F; 之外的所有内容（包括换行符）。编译器会将（&#x2F;* 和 *&#x2F;）中的所有内容忽略。</p>
+</li>
+</ol>
+<p>​       常用于多行注释，注释时不能嵌套。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">*   </span></span><br><span class="line"><span class="comment">*简单主函数</span></span><br><span class="line"><span class="comment">*常用*号分行</span></span><br><span class="line"><span class="comment">*</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="1-4-完成程序"><a href="#1-4-完成程序" class="headerlink" title="1.4 完成程序"></a>1.4 完成程序</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">cout &lt;&lt; <span class="string">&quot;第一个数&quot;</span> &lt;&lt; v1 &lt;&lt; <span class="string">&quot;和第二个数&quot;</span> &lt;&lt; v2 </span><br><span class="line">          &lt;&lt; <span class="string">&quot;的和是&quot;</span> &lt;&lt; v1 + v2 &lt;&lt; endl;</span><br></pre></td></tr></table></figure>
+
+<p>输出的结果就是v1和v2的和。</p>
+<h2 id="第二章-基础"><a href="#第二章-基础" class="headerlink" title="第二章 基础"></a>第二章 基础</h2><h3 id="2-1-变量和基本类型"><a href="#2-1-变量和基本类型" class="headerlink" title="2.1 变量和基本类型"></a>2.1 变量和基本类型</h3><h4 id="C-数据类型"><a href="#C-数据类型" class="headerlink" title="C++ 数据类型"></a>C++ 数据类型</h4><p>使用编程语言进行编程时，需要用到各种变量来存储各种信息。变量保留的是它所存储的值的内存位置。这意味着，当您创建一个变量时，就会在内存中保留一些空间。</p>
+<p>您可能需要存储各种数据类型（比如字符型、宽字符型、整型、浮点型、双浮点型、布尔型等）的信息，操作系统会根据变量的数据类型，来分配内存和决定在保留内存中存储什么。</p>
+<h4 id="基本的内置类型"><a href="#基本的内置类型" class="headerlink" title="基本的内置类型"></a>基本的内置类型</h4><p>C++ 为程序员提供了种类丰富的内置数据类型和用户自定义的数据类型。下表列出了七种基本的 C++ 数据类型：</p>
+<table>
+<thead>
+<tr>
+<th align="left">类型</th>
+<th align="left">关键字</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">布尔型</td>
+<td align="left">bool</td>
+</tr>
+<tr>
+<td align="left">字符型</td>
+<td align="left">char</td>
+</tr>
+<tr>
+<td align="left">整型</td>
+<td align="left">int</td>
+</tr>
+<tr>
+<td align="left">浮点型</td>
+<td align="left">float</td>
+</tr>
+<tr>
+<td align="left">双浮点型</td>
+<td align="left">double</td>
+</tr>
+<tr>
+<td align="left">无类型</td>
+<td align="left">void</td>
+</tr>
+<tr>
+<td align="left">宽字符型</td>
+<td align="left">wchar_t</td>
+</tr>
+</tbody></table>
+<p>其实 wchar_t 是这样来的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">typedef short int wchar_t;</span><br></pre></td></tr></table></figure>
+
+<p>所以 wchar_t 实际上的空间是和 short int 一样。</p>
+<p>一些基本类型可以使用一个或多个类型修饰符进行修饰：</p>
+<ul>
+<li>signed</li>
+<li>unsigned</li>
+<li>short</li>
+<li>long</li>
+</ul>
+<p>下表显示了各种变量类型在内存中存储值时需要占用的内存，以及该类型的变量所能存储的最大值和最小值。</p>
+<p><strong>注意：</strong>不同系统会有所差异，一字节为 8 位。</p>
+<p><strong>注意：</strong>默认情况下，int、short、long都是带符号的，即 signed。</p>
+<p><strong>注意：</strong>long int 8 个字节，int 都是 4 个字节，早期的 C 编译器定义了 long int 占用 4 个字节，int 占用 2 个字节，新版的 C&#x2F;C++ 标准兼容了早期的这一设定。</p>
+<table>
+<thead>
+<tr>
+<th align="left">类型</th>
+<th align="left">位</th>
+<th align="left">范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">char</td>
+<td align="left">1 个字节</td>
+<td align="left">-128 到 127 或者 0 到 255</td>
+</tr>
+<tr>
+<td align="left">unsigned char</td>
+<td align="left">1 个字节</td>
+<td align="left">0 到 255</td>
+</tr>
+<tr>
+<td align="left">signed char</td>
+<td align="left">1 个字节</td>
+<td align="left">-128 到 127</td>
+</tr>
+<tr>
+<td align="left">int</td>
+<td align="left">4 个字节</td>
+<td align="left">-2147483648 到 2147483647</td>
+</tr>
+<tr>
+<td align="left">unsigned int</td>
+<td align="left">4 个字节</td>
+<td align="left">0 到 4294967295</td>
+</tr>
+<tr>
+<td align="left">signed int</td>
+<td align="left">4 个字节</td>
+<td align="left">-2147483648 到 2147483647</td>
+</tr>
+<tr>
+<td align="left">short int</td>
+<td align="left">2 个字节</td>
+<td align="left">-32768 到 32767</td>
+</tr>
+<tr>
+<td align="left">unsigned short int</td>
+<td align="left">2 个字节</td>
+<td align="left">0 到 65,535</td>
+</tr>
+<tr>
+<td align="left">signed short int</td>
+<td align="left">2 个字节</td>
+<td align="left">-32768 到 32767</td>
+</tr>
+<tr>
+<td align="left">long int</td>
+<td align="left">8 个字节</td>
+<td align="left">-9,223,372,036,854,775,808 到 9,223,372,036,854,775,807</td>
+</tr>
+<tr>
+<td align="left">signed long int</td>
+<td align="left">8 个字节</td>
+<td align="left">-9,223,372,036,854,775,808 到 9,223,372,036,854,775,807</td>
+</tr>
+<tr>
+<td align="left">unsigned long int</td>
+<td align="left">8 个字节</td>
+<td align="left">0 到 18,446,744,073,709,551,615</td>
+</tr>
+<tr>
+<td align="left">float</td>
+<td align="left">4 个字节</td>
+<td align="left">精度型占4个字节（32位）内存空间，+&#x2F;- 3.4e +&#x2F;- 38 (~7 个数字)</td>
+</tr>
+<tr>
+<td align="left">double</td>
+<td align="left">8 个字节</td>
+<td align="left">双精度型占8 个字节（64位）内存空间，+&#x2F;- 1.7e +&#x2F;- 308 (~15 个数字)</td>
+</tr>
+<tr>
+<td align="left">long double</td>
+<td align="left">16 个字节</td>
+<td align="left">长双精度型 16 个字节（128位）内存空间，可提供18-19位有效数字。</td>
+</tr>
+<tr>
+<td align="left">wchar_t</td>
+<td align="left">2 或 4 个字节</td>
+<td align="left">1 个宽字符</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>注意，各种类型的存储大小与系统位数有关，但目前通用的以64位系统为主。</p>
+<p>以下列出了32位系统与64位系统的存储大小的差别（windows 相同）：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2014/09/32-64.jpg" alt="img"></p>
+</blockquote>
+<p>从上表可得知，变量的大小会根据编译器和所使用的电脑而有所不同。</p>
+<p>下面实例会输出您电脑上各种数据类型的大小。</p>
+<h4 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h4><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span>  </span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;limits&gt;</span></span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;type: \t\t&quot;</span> &lt;&lt; <span class="string">&quot;************size**************&quot;</span>&lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;bool: \t\t&quot;</span> &lt;&lt; <span class="string">&quot;所占字节数：&quot;</span> &lt;&lt; <span class="built_in">sizeof</span>(<span class="type">bool</span>);  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t最大值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">bool</span>&gt;::max)();  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t\t最小值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">bool</span>&gt;::min)() &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;char: \t\t&quot;</span> &lt;&lt; <span class="string">&quot;所占字节数：&quot;</span> &lt;&lt; <span class="built_in">sizeof</span>(<span class="type">char</span>);  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t最大值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">char</span>&gt;::max)();  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t\t最小值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">char</span>&gt;::min)() &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;signed char: \t&quot;</span> &lt;&lt; <span class="string">&quot;所占字节数：&quot;</span> &lt;&lt; <span class="built_in">sizeof</span>(<span class="type">signed</span> <span class="type">char</span>);  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t最大值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">signed</span> <span class="type">char</span>&gt;::max)();  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t\t最小值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">signed</span> <span class="type">char</span>&gt;::min)() &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;unsigned char: \t&quot;</span> &lt;&lt; <span class="string">&quot;所占字节数：&quot;</span> &lt;&lt; <span class="built_in">sizeof</span>(<span class="type">unsigned</span> <span class="type">char</span>);  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t最大值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">unsigned</span> <span class="type">char</span>&gt;::max)();  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t\t最小值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">unsigned</span> <span class="type">char</span>&gt;::min)() &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;wchar_t: \t&quot;</span> &lt;&lt; <span class="string">&quot;所占字节数：&quot;</span> &lt;&lt; <span class="built_in">sizeof</span>(<span class="type">wchar_t</span>);  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t最大值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">wchar_t</span>&gt;::max)();  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t\t最小值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">wchar_t</span>&gt;::min)() &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;short: \t\t&quot;</span> &lt;&lt; <span class="string">&quot;所占字节数：&quot;</span> &lt;&lt; <span class="built_in">sizeof</span>(<span class="type">short</span>);  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t最大值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">short</span>&gt;::max)();  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t\t最小值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">short</span>&gt;::min)() &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;int: \t\t&quot;</span> &lt;&lt; <span class="string">&quot;所占字节数：&quot;</span> &lt;&lt; <span class="built_in">sizeof</span>(<span class="type">int</span>);  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t最大值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">int</span>&gt;::max)();  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t最小值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">int</span>&gt;::min)() &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;unsigned: \t&quot;</span> &lt;&lt; <span class="string">&quot;所占字节数：&quot;</span> &lt;&lt; <span class="built_in">sizeof</span>(<span class="type">unsigned</span>);  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t最大值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">unsigned</span>&gt;::max)();  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t最小值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">unsigned</span>&gt;::min)() &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;long: \t\t&quot;</span> &lt;&lt; <span class="string">&quot;所占字节数：&quot;</span> &lt;&lt; <span class="built_in">sizeof</span>(<span class="type">long</span>);  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t最大值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">long</span>&gt;::max)();  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t最小值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">long</span>&gt;::min)() &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;unsigned long: \t&quot;</span> &lt;&lt; <span class="string">&quot;所占字节数：&quot;</span> &lt;&lt; <span class="built_in">sizeof</span>(<span class="type">unsigned</span> <span class="type">long</span>);  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t最大值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">unsigned</span> <span class="type">long</span>&gt;::max)();  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t最小值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">unsigned</span> <span class="type">long</span>&gt;::min)() &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;double: \t&quot;</span> &lt;&lt; <span class="string">&quot;所占字节数：&quot;</span> &lt;&lt; <span class="built_in">sizeof</span>(<span class="type">double</span>);  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t最大值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">double</span>&gt;::max)();  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t最小值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">double</span>&gt;::min)() &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;long double: \t&quot;</span> &lt;&lt; <span class="string">&quot;所占字节数：&quot;</span> &lt;&lt; <span class="built_in">sizeof</span>(<span class="type">long</span> <span class="type">double</span>);  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t最大值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">long</span> <span class="type">double</span>&gt;::max)();  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t最小值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">long</span> <span class="type">double</span>&gt;::min)() &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;float: \t\t&quot;</span> &lt;&lt; <span class="string">&quot;所占字节数：&quot;</span> &lt;&lt; <span class="built_in">sizeof</span>(<span class="type">float</span>);  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t最大值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">float</span>&gt;::max)();  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t最小值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">float</span>&gt;::min)() &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;size_t: \t&quot;</span> &lt;&lt; <span class="string">&quot;所占字节数：&quot;</span> &lt;&lt; <span class="built_in">sizeof</span>(<span class="type">size_t</span>);  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t最大值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">size_t</span>&gt;::max)();  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\t最小值：&quot;</span> &lt;&lt; (numeric_limits&lt;<span class="type">size_t</span>&gt;::min)() &lt;&lt; endl;  </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;string: \t&quot;</span> &lt;&lt; <span class="string">&quot;所占字节数：&quot;</span> &lt;&lt; <span class="built_in">sizeof</span>(string) &lt;&lt; endl;  </span><br><span class="line">    <span class="comment">// &lt;&lt; &quot;\t最大值：&quot; &lt;&lt; (numeric_limits&lt;string&gt;::max)() &lt;&lt; &quot;\t最小值：&quot; &lt;&lt; (numeric_limits&lt;string&gt;::min)() &lt;&lt; endl;  </span></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;type: \t\t&quot;</span> &lt;&lt; <span class="string">&quot;************size**************&quot;</span>&lt;&lt; endl;  </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;  </span><br><span class="line">&#125;</span><br><span class="line">本实例使用了 endl，这将在每一行后插入一个换行符，&lt;&lt; 运算符用于向屏幕传多个值，<span class="built_in">sizeof</span>() 函数用来获取各种数据类型的大小。</span><br><span class="line"></span><br><span class="line">当上面的代码被编译和执行时，它会产生以下的结果，结果会根据所使用的计算机而有所不同：</span><br><span class="line"></span><br><span class="line">type:         ************size**************</span><br><span class="line"><span class="type">bool</span>:         所占字节数：<span class="number">1</span>    最大值：<span class="number">1</span>        最小值：<span class="number">0</span></span><br><span class="line"><span class="type">char</span>:         所占字节数：<span class="number">1</span>    最大值：        最小值：?</span><br><span class="line"><span class="type">signed</span> <span class="type">char</span>:     所占字节数：<span class="number">1</span>    最大值：        最小值：?</span><br><span class="line"><span class="type">unsigned</span> <span class="type">char</span>:     所占字节数：<span class="number">1</span>    最大值：?        最小值：</span><br><span class="line"><span class="type">wchar_t</span>:     所占字节数：<span class="number">4</span>    最大值：<span class="number">2147483647</span>        最小值：<span class="number">-2147483648</span></span><br><span class="line"><span class="type">short</span>:         所占字节数：<span class="number">2</span>    最大值：<span class="number">32767</span>        最小值：<span class="number">-32768</span></span><br><span class="line"><span class="type">int</span>:         所占字节数：<span class="number">4</span>    最大值：<span class="number">2147483647</span>    最小值：<span class="number">-2147483648</span></span><br><span class="line"><span class="type">unsigned</span>:     所占字节数：<span class="number">4</span>    最大值：<span class="number">4294967295</span>    最小值：<span class="number">0</span></span><br><span class="line"><span class="type">long</span>:         所占字节数：<span class="number">8</span>    最大值：<span class="number">9223372036854775807</span>    最小值：<span class="number">-9223372036854775808</span></span><br><span class="line"><span class="type">unsigned</span> <span class="type">long</span>:     所占字节数：<span class="number">8</span>    最大值：<span class="number">18446744073709551615</span>    最小值：<span class="number">0</span></span><br><span class="line"><span class="type">double</span>:     所占字节数：<span class="number">8</span>    最大值：<span class="number">1.79769e+308</span>    最小值：<span class="number">2.22507e-308</span></span><br><span class="line"><span class="type">long</span> <span class="type">double</span>:     所占字节数：<span class="number">16</span>    最大值：<span class="number">1.18973e+4932</span>    最小值：<span class="number">3.3621e-4932</span></span><br><span class="line"><span class="type">float</span>:         所占字节数：<span class="number">4</span>    最大值：<span class="number">3.40282e+38</span>    最小值：<span class="number">1.17549e-38</span></span><br><span class="line"><span class="type">size_t</span>:     所占字节数：<span class="number">8</span>    最大值：<span class="number">18446744073709551615</span>    最小值：<span class="number">0</span></span><br><span class="line">string:     所占字节数：<span class="number">24</span></span><br><span class="line">type:         ************size**************</span><br></pre></td></tr></table></figure>
+
+
+
+<p>本实例使用了 <strong>endl</strong>，这将在每一行后插入一个换行符，**&lt;&lt;** 运算符用于向屏幕传多个值，<strong>sizeof()</strong> 函数用来获取各种数据类型的大小。</p>
+<p>当上面的代码被编译和执行时，它会产生以下的结果，结果会根据所使用的计算机而有所不同：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">type:         ************size**************</span><br><span class="line">bool:         所占字节数：1    最大值：1        最小值：0</span><br><span class="line">char:         所占字节数：1    最大值：        最小值：?</span><br><span class="line">signed char:     所占字节数：1    最大值：        最小值：?</span><br><span class="line">unsigned char:     所占字节数：1    最大值：?        最小值：</span><br><span class="line">wchar_t:     所占字节数：4    最大值：2147483647        最小值：-2147483648</span><br><span class="line">short:         所占字节数：2    最大值：32767        最小值：-32768</span><br><span class="line">int:         所占字节数：4    最大值：2147483647    最小值：-2147483648</span><br><span class="line">unsigned:     所占字节数：4    最大值：4294967295    最小值：0</span><br><span class="line">long:         所占字节数：8    最大值：9223372036854775807    最小值：-9223372036854775808</span><br><span class="line">unsigned long:     所占字节数：8    最大值：18446744073709551615    最小值：0</span><br><span class="line">double:     所占字节数：8    最大值：1.79769e+308    最小值：2.22507e-308</span><br><span class="line">long double:     所占字节数：16    最大值：1.18973e+4932    最小值：3.3621e-4932</span><br><span class="line">float:         所占字节数：4    最大值：3.40282e+38    最小值：1.17549e-38</span><br><span class="line">size_t:     所占字节数：8    最大值：18446744073709551615    最小值：0</span><br><span class="line">string:     所占字节数：24</span><br><span class="line">type:         ************size**************</span><br></pre></td></tr></table></figure>
+
+<h4 id="typedef-声明"><a href="#typedef-声明" class="headerlink" title="typedef 声明"></a>typedef 声明</h4><p>您可以使用 <strong>typedef</strong> 为一个已有的类型取一个新的名字。下面是使用 typedef 定义一个新类型的语法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">typedef type newname; </span><br></pre></td></tr></table></figure>
+
+<p>例如，下面的语句会告诉编译器，feet 是 int 的另一个名称：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">typedef int feet;</span><br></pre></td></tr></table></figure>
+
+<p>现在，下面的声明是完全合法的，它创建了一个整型变量 distance：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">feet distance;</span><br></pre></td></tr></table></figure>
+
+<h4 id="枚举类型"><a href="#枚举类型" class="headerlink" title="枚举类型"></a>枚举类型</h4><p>枚举类型(enumeration)是C++中的一种派生数据类型，它是由用户定义的若干枚举常量的集合。</p>
+<p>如果一个变量只有几种可能的值，可以定义为枚举(enumeration)类型。所谓”枚举”是指将变量的值一一列举出来，变量的值只能在列举出来的值的范围内。</p>
+<p>创建枚举，需要使用关键字 <strong>enum</strong>。枚举类型的一般形式为：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">enum 枚举名&#123; </span><br><span class="line">     标识符[=整型常数], </span><br><span class="line">     标识符[=整型常数], </span><br><span class="line">... </span><br><span class="line">    标识符[=整型常数]</span><br><span class="line">&#125; 枚举变量;</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+
+<p>如果枚举没有初始化, 即省掉”&#x3D;整型常数”时, 则从第一个标识符开始。</p>
+<p>例如，下面的代码定义了一个颜色枚举，变量 c 的类型为 color。最后，c 被赋值为 “blue”。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">enum color &#123; red, green, blue &#125; c;</span><br><span class="line">c = blue;</span><br></pre></td></tr></table></figure>
+
+<p>默认情况下，第一个名称的值为 0，第二个名称的值为 1，第三个名称的值为 2，以此类推。但是，您也可以给名称赋予一个特殊的值，只需要添加一个初始值即可。例如，在下面的枚举中，<strong>green</strong> 的值为 5。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">enum color &#123; red, green=5, blue &#125;;</span><br></pre></td></tr></table></figure>
+
+<p>在这里，<strong>blue</strong> 的值为 6，因为默认情况下，每个名称都会比它前面一个名称大 1，但 red 的值依然为 0。</p>
+<h3 id="2-2-运算符和表达式"><a href="#2-2-运算符和表达式" class="headerlink" title="2.2 运算符和表达式"></a>2.2 运算符和表达式</h3><h4 id="2-2-1-算术运算符"><a href="#2-2-1-算术运算符" class="headerlink" title="2.2.1 算术运算符"></a>2.2.1 算术运算符</h4><h4 id="2-2-2-比较运算符"><a href="#2-2-2-比较运算符" class="headerlink" title="2.2.2 比较运算符"></a>2.2.2 比较运算符</h4><h4 id="2-2-3-逻辑运算符"><a href="#2-2-3-逻辑运算符" class="headerlink" title="2.2.3 逻辑运算符"></a>2.2.3 逻辑运算符</h4><h3 id="2-3-分支结构"><a href="#2-3-分支结构" class="headerlink" title="2.3 分支结构"></a>2.3 分支结构</h3><h3 id="2-4-循环结构一"><a href="#2-4-循环结构一" class="headerlink" title="2.4 循环结构一"></a>2.4 循环结构一</h3><h3 id="2-5-循环结构二"><a href="#2-5-循环结构二" class="headerlink" title="2.5 循环结构二"></a>2.5 循环结构二</h3><h3 id="2-6-数组一"><a href="#2-6-数组一" class="headerlink" title="2.6 数组一"></a>2.6 数组一</h3><h3 id="2-7-字符串"><a href="#2-7-字符串" class="headerlink" title="2.7 字符串"></a>2.7 字符串</h3><h3 id="2-8-数组二"><a href="#2-8-数组二" class="headerlink" title="2.8 数组二"></a>2.8 数组二</h3><h3 id="2-9-string字符串"><a href="#2-9-string字符串" class="headerlink" title="2.9 string字符串"></a>2.9 string字符串</h3><h3 id="3-0-函数"><a href="#3-0-函数" class="headerlink" title="3.0 函数"></a>3.0 函数</h3><h3 id="3-1-结构体"><a href="#3-1-结构体" class="headerlink" title="3.1 结构体"></a>3.1 结构体</h3><h3 id="3-2-指针"><a href="#3-2-指针" class="headerlink" title="3.2 指针"></a>3.2 指针</h3></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">Jia Ao</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2026/05/16/C-%E5%9F%BA%E7%A1%80/">http://example.com/2026/05/16/C-基础/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">贾心奥利奥Ψ兔兔</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/OI%E7%9B%B8%E5%85%B3/">OI相关</a></div><div class="post_share"><div class="social-share" data-image="/photo/background/71.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/photo/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/photo/wechat.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/photo/zhifubao.jpg" target="_blank"><img class="post-qr-code-img" src="/photo/zhifubao.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2024/09/11/kali-linux%E5%AE%89%E8%A3%85%E5%88%B0U%E7%9B%98%E4%B8%AD/"><img class="prev-cover" src="/photo/background/61.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">kali-linux安装到U盘中</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/photo/touxiang.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Jia Ao</div><div class="author-info__description">个人笔记分享</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/jiaxinaoliao/"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/jiaxinaoliao" target="_blank" title="Github"><i class="fab fa-github"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">有问题加群 兔兔小窝 QQ：391145100</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-C-%E5%9F%BA%E7%A1%80"><span class="toc-number">1.</span> <span class="toc-text">第一部分 C++基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA"><span class="toc-number">1.1.</span> <span class="toc-text">第一章 输入输出</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E5%BC%80%E5%A7%8B%E6%A1%86%E6%9E%B6"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.1 开始框架</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-1-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">1.1.1 基本概念</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1"><span class="toc-number">1.1.1.1.1.</span> <span class="toc-text">面向对象程序设计</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%A0%87%E5%87%86%E5%BA%93"><span class="toc-number">1.1.1.1.2.</span> <span class="toc-text">标准库</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#ANSI-%E6%A0%87%E5%87%86"><span class="toc-number">1.1.1.1.3.</span> <span class="toc-text">ANSI 标准</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0-C"><span class="toc-number">1.1.1.1.4.</span> <span class="toc-text">学习 C++</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#C-%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">1.1.1.1.5.</span> <span class="toc-text">C++ 的使用</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-2-C-%E7%A8%8B%E5%BA%8F%E6%A1%86%E6%9E%B6"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">1.1.2 C++程序框架</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-3-%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F"><span class="toc-number">1.1.1.3.</span> <span class="toc-text">1.1.3 编译运行程序</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E5%88%9D%E8%AF%86C-%E7%9A%84%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA"><span class="toc-number">1.1.2.</span> <span class="toc-text">1.2 初识C++的输入输出</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-1-C-%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E5%BA%93"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">1.2.1 C++输入输出库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-2-C-%E8%BE%93%E5%85%A5"><span class="toc-number">1.1.2.2.</span> <span class="toc-text">1.2.2 C++输入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-3-C-%E8%BE%93%E5%87%BA"><span class="toc-number">1.1.2.3.</span> <span class="toc-text">1.2.3 C++输出</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-4-%E8%BE%93%E5%87%BA%E7%AC%A6%E5%8F%B7"><span class="toc-number">1.1.2.4.</span> <span class="toc-text">1.2.4 输出符号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-5-%E4%BD%BF%E7%94%A8%E6%A0%87%E5%87%86%E5%BA%93%E4%B8%AD%E7%9A%84%E5%90%8D%E5%AD%97"><span class="toc-number">1.1.2.5.</span> <span class="toc-text">1.2.5 使用标准库中的名字</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-6-%E8%BE%93%E5%85%A5%E7%AC%A6%E5%8F%B7"><span class="toc-number">1.1.2.6.</span> <span class="toc-text">1.2.6 输入符号</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-%E6%B3%A8%E9%87%8A"><span class="toc-number">1.1.3.</span> <span class="toc-text">1.3 注释</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-1-%E6%B3%A8%E9%87%8A%E7%AE%80%E4%BB%8B"><span class="toc-number">1.1.3.1.</span> <span class="toc-text">1.3.1 注释简介</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-2-C-%E6%B3%A8%E9%87%8A%E7%A7%8D%E7%B1%BB"><span class="toc-number">1.1.3.2.</span> <span class="toc-text">1.3.2 C++注释种类</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-%E5%AE%8C%E6%88%90%E7%A8%8B%E5%BA%8F"><span class="toc-number">1.1.4.</span> <span class="toc-text">1.4 完成程序</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%9F%BA%E7%A1%80"><span class="toc-number">1.2.</span> <span class="toc-text">第二章 基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E5%8F%98%E9%87%8F%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.2.1.</span> <span class="toc-text">2.1 变量和基本类型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#C-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.2.1.1.</span> <span class="toc-text">C++ 数据类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%86%85%E7%BD%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.2.1.2.</span> <span class="toc-text">基本的内置类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B"><span class="toc-number">1.2.1.3.</span> <span class="toc-text">实例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#typedef-%E5%A3%B0%E6%98%8E"><span class="toc-number">1.2.1.4.</span> <span class="toc-text">typedef 声明</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%9A%E4%B8%BE%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.2.1.5.</span> <span class="toc-text">枚举类型</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E8%BF%90%E7%AE%97%E7%AC%A6%E5%92%8C%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.2 运算符和表达式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-1-%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.2.2.1.</span> <span class="toc-text">2.2.1 算术运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-2-%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.2.2.2.</span> <span class="toc-text">2.2.2 比较运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-3-%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.2.2.3.</span> <span class="toc-text">2.2.3 逻辑运算符</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E5%88%86%E6%94%AF%E7%BB%93%E6%9E%84"><span class="toc-number">1.2.3.</span> <span class="toc-text">2.3 分支结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84%E4%B8%80"><span class="toc-number">1.2.4.</span> <span class="toc-text">2.4 循环结构一</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5-%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84%E4%BA%8C"><span class="toc-number">1.2.5.</span> <span class="toc-text">2.5 循环结构二</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6-%E6%95%B0%E7%BB%84%E4%B8%80"><span class="toc-number">1.2.6.</span> <span class="toc-text">2.6 数组一</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-7-%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">1.2.7.</span> <span class="toc-text">2.7 字符串</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-8-%E6%95%B0%E7%BB%84%E4%BA%8C"><span class="toc-number">1.2.8.</span> <span class="toc-text">2.8 数组二</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-9-string%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">1.2.9.</span> <span class="toc-text">2.9 string字符串</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-0-%E5%87%BD%E6%95%B0"><span class="toc-number">1.2.10.</span> <span class="toc-text">3.0 函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E7%BB%93%E6%9E%84%E4%BD%93"><span class="toc-number">1.2.11.</span> <span class="toc-text">3.1 结构体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E6%8C%87%E9%92%88"><span class="toc-number">1.2.12.</span> <span class="toc-text">3.2 指针</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/05/16/C-%E5%9F%BA%E7%A1%80/" title="C++基础"><img src="/photo/background/71.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C++基础"/></a><div class="content"><a class="title" href="/2026/05/16/C-%E5%9F%BA%E7%A1%80/" title="C++基础">C++基础</a><time datetime="2026-05-16T01:41:33.000Z" title="发表于 2026-05-16 09:41:33">2026-05-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/09/11/kali-linux%E5%AE%89%E8%A3%85%E5%88%B0U%E7%9B%98%E4%B8%AD/" title="kali-linux安装到U盘中"><img src="/photo/background/61.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="kali-linux安装到U盘中"/></a><div class="content"><a class="title" href="/2024/09/11/kali-linux%E5%AE%89%E8%A3%85%E5%88%B0U%E7%9B%98%E4%B8%AD/" title="kali-linux安装到U盘中">kali-linux安装到U盘中</a><time datetime="2024-09-11T09:23:29.000Z" title="发表于 2024-09-11 17:23:29">2024-09-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/12/07/neovim%E5%BF%AB%E9%80%9F%E9%85%8D%E7%BD%AE/" title="neovim快速配置教程"><img src="/photo/background/66.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="neovim快速配置教程"/></a><div class="content"><a class="title" href="/2023/12/07/neovim%E5%BF%AB%E9%80%9F%E9%85%8D%E7%BD%AE/" title="neovim快速配置教程">neovim快速配置教程</a><time datetime="2023-12-07T03:36:12.000Z" title="发表于 2023-12-07 11:36:12">2023-12-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/05/29/arch-linux%E5%85%B3%E6%9C%BA%E9%81%87%E5%88%B0-A-stop-job-is-running-for/" title="arch linux关机遇到(A stop job is running for ...)"><img src="/photo/background/43.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="arch linux关机遇到(A stop job is running for ...)"/></a><div class="content"><a class="title" href="/2023/05/29/arch-linux%E5%85%B3%E6%9C%BA%E9%81%87%E5%88%B0-A-stop-job-is-running-for/" title="arch linux关机遇到(A stop job is running for ...)">arch linux关机遇到(A stop job is running for ...)</a><time datetime="2023-05-29T10:09:04.000Z" title="发表于 2023-05-29 18:09:04">2023-05-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/05/29/arch-linux%E5%A3%B0%E9%9F%B3%E4%B8%8E%E8%83%8C%E5%85%89%E4%BA%AE%E5%BA%A6Fn%E8%B0%83%E8%8A%82/" title="arch linux声音与背光亮度Fn调节（dwm）"><img src="/photo/background/6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="arch linux声音与背光亮度Fn调节（dwm）"/></a><div class="content"><a class="title" href="/2023/05/29/arch-linux%E5%A3%B0%E9%9F%B3%E4%B8%8E%E8%83%8C%E5%85%89%E4%BA%AE%E5%BA%A6Fn%E8%B0%83%E8%8A%82/" title="arch linux声音与背光亮度Fn调节（dwm）">arch linux声音与背光亮度Fn调节（dwm）</a><time datetime="2023-05-29T04:57:13.000Z" title="发表于 2023-05-29 12:57:13">2023-05-29</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/photo/background/71.png')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2026 By Jia Ao</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a target="_blank" rel="noopener" href="https://jiaxinaoliao.github.io/">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
+
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: 'Ov23liagQUFvLxGCoLwT',
+      clientSecret: '4ef2304f954bedc8d78005d748fec96de786208f',
+      repo: 'blogtalk',
+      owner: 'jiaxinaoliao',
+      admin: ['jiaxinaoliao'],
+      id: '96cdda769414754234d49c0201954c1c',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    getScript('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !true) {
+  if (true) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script src="/js/jiazai.js"></script><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
