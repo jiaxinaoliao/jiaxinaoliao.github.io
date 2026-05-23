@@ -117,6 +117,56 @@
     
     
     <entry>
+      <title>arch-linux安装教程六（zsh的安装与美化）</title>
+      <link href="/2024/01/14/arch-linux%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E5%85%AD/"/>
+      <url>/2024/01/14/arch-linux%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E5%85%AD/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、安装zsh以及oh-my-zsh"><a href="#一、安装zsh以及oh-my-zsh" class="headerlink" title="一、安装zsh以及oh-my-zsh"></a>一、安装zsh以及oh-my-zsh</h1><h2 id="1、zsh安装"><a href="#1、zsh安装" class="headerlink" title="1、zsh安装"></a>1、zsh安装</h2><p>zsh的话就不多说了，有很多的自定义选项，并支持扩展。可以实现更强大的命令补全，命令高亮等一系列酷炫功能。但是zsh配置起来有一些麻烦所以我们借助oh-my-zsh去直接配置。</p><p>首先我们需要安装zsh非常简单<code>sudo pacman -S zsh</code>就可以</p><h2 id="2、oh-my-zsh安装"><a href="#2、oh-my-zsh安装" class="headerlink" title="2、oh-my-zsh安装"></a>2、oh-my-zsh安装</h2><p>oh-my-zsh的官网给出了两种方式安装<a href="https://ohmyz.sh/">https://ohmyz.sh/</a></p><p>第一种是用curl</p><p><code>sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;</code></p><p>第二种是用wget</p><p><code>sh -c &quot;$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)&quot;</code></p><p>不过两种方式都差不多主要看网络好不好，如果按上一篇或者配置好，科学上网的话是没有问题的，要不然会报错。</p><p>所以我们有第二种方法</p><p>可以直接去github克隆下来</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh、</span><br><span class="line">之后复制配置文件到家目录下面</span><br><span class="line"><span class="built_in">cp</span> ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc</span><br><span class="line">最后吧zsh改成默认的shell</span><br><span class="line">chsh -s /bin/zsh</span><br></pre></td></tr></table></figure><h1 id="二、zsh美化"><a href="#二、zsh美化" class="headerlink" title="二、zsh美化"></a>二、zsh美化</h1><p>之后用编辑器（vim或者vscode等都可以）打开zsh的配置文件<code>sudo vim .zshrc</code>找到里面这一行</p><img src="/2024/01/14/arch-linux%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E5%85%AD/image-20240114204831300.png" class=""><p><img src="/arch-linux%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E5%85%AD/image-20240114204831300.png" alt="image-20240114204831300"></p><p>这里的robbyrussell就是主题名称，可以换成ys等，改完之后重新进入终端或者执行 source ~&#x2F;.zshrc 命令就会发现zsh的主题就变了。</p><h1 id="三、ohmyzsh插件"><a href="#三、ohmyzsh插件" class="headerlink" title="三、ohmyzsh插件"></a>三、ohmyzsh插件</h1><p>oh-my-zsh是可以安装插件的，有一些自带有一些需要自己安装一下</p><img src="/2024/01/14/arch-linux%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E5%85%AD/image-20240114205307146.png" class=""><p><img src="/arch-linux%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E5%85%AD/image-20240114205307146.png" alt="image-20240114205307146"></p><p>找到这一行比如git就是原本就有的，如果添加写到后面就可以了</p><p>plugins&#x3D;（插件A  插件B  插件C）</p><p>zsh的插件有很多这里介绍几个我常用的</p><h2 id="1、git"><a href="#1、git" class="headerlink" title="1、git"></a>1、git</h2><p>git里面添加了很多git的alias这是个zsh自带的</p><h2 id="2、z"><a href="#2、z" class="headerlink" title="2、z"></a>2、z</h2><p>这个也是zsh自带的，我们把它放到plugins里面就可以用来跳转或者移动autojump也可以不过autojump需要安装ctrl+r也可以</p><h2 id="3、sudo"><a href="#3、sudo" class="headerlink" title="3、sudo"></a>3、sudo</h2><p>偶尔输入某个命令，提示没有权限，需要加sudo，这个时候按两下ESC，就会在命令行头部加上sudo</p><h2 id="4、zsh-autosuggestions"><a href="#4、zsh-autosuggestions" class="headerlink" title="4、zsh-autosuggestions"></a>4、zsh-autosuggestions</h2><h2 id="5、zsh-syntax-highlighting"><a href="#5、zsh-syntax-highlighting" class="headerlink" title="5、zsh-syntax-highlighting"></a>5、zsh-syntax-highlighting</h2><p>这两个几乎是zsh必备插件人手一个，一个是自动补全历史命令，会记录你之前输入过的所有命令，并且自动匹配你可能想要输入命令，然后按→补全；另一个是高亮正确命令，命令太多，有时候记不住，等输入完了才知道命令输错了，这个插件直接在输入过程中就会提示你，当前命令是否正确，错误红色，正确绿色</p><p>不过这两个插件需要手动安装</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/zsh-users/zsh-autosuggestions $&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;/plugins/zsh-autosuggestions</span><br><span class="line"></span><br><span class="line">git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;/plugins/zsh-syntax-highlighting</span><br></pre></td></tr></table></figure><p>zsh的插件非常非常的多，这两就放几个常用的，可以根据自己的使用情况加上比如sublime或者vscode等对应的插件。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> arch linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> arch linux安装教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>arch linux安装（到U盘中）教程（五 科学上网v2rayA）</title>
+      <link href="/2024/01/14/arch-linux%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E4%BA%94/"/>
+      <url>/2024/01/14/arch-linux%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E4%BA%94/</url>
+      
+        <content type="html"><![CDATA[<h1 id="1、科学上网"><a href="#1、科学上网" class="headerlink" title="1、科学上网"></a>1、科学上网</h1><p>由于后续在使用中肯定涉及网络问题所以要先把网络连接上。</p><p>这里使用的是v2rayA</p><img src="/2024/01/14/arch-linux%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E4%BA%94/1210_2.png" class=""><p><img src="/arch-linux%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E4%BA%94/1210_2.png" alt="1210_2"></p><p>1、 首先需要v2ray内核</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo pacman -S v2ray</span><br><span class="line">安装完之后并不需要，所以我们关闭服务就行</span><br><span class="line">sudo systemctl disable v2ray --now</span><br></pre></td></tr></table></figure><p>2、之后安装v2rayA</p><p>也非常简单<code>sudo pacman -S v2raya</code></p><p>然后启动即可</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo systemctl start v2raya.service</span><br><span class="line">sudo systemctl enable v2raya.service</span><br></pre></td></tr></table></figure><p>v2rayA的设置ui是网页形式的，我们用火狐如果没有的话安装一下<code>sudo pacman -S firefox</code>，然后打开浏览器，访问v2rayA的配置地址<a href="http://localhost:2017/">http://localhost:2017/</a></p><p>第一次进入需要设置用户名以及密码如果忘记密码的话可以删除重新下载或者用命令<code>sudo v2raya --reset-password</code></p><p>之后根据提示导入订阅节点</p><img src="/2024/01/14/arch-linux%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E4%BA%94/1210_3.png" class=""><p><img src="/arch-linux%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E4%BA%94/1210_3.png" alt="1210_3"></p><p>设置可以用官方推荐的设置</p><p><img src="/arch-linux%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E4%BA%94/1210_5.png" alt="1210_5"></p><p>设置好地址与端口就可以正常使用了</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> arch linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> arch linux安装教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>neovim快速配置教程</title>
       <link href="/2023/12/07/neovim%E5%BF%AB%E9%80%9F%E9%85%8D%E7%BD%AE/"/>
       <url>/2023/12/07/neovim%E5%BF%AB%E9%80%9F%E9%85%8D%E7%BD%AE/</url>
