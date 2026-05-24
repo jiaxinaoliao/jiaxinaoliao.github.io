@@ -1,0 +1,837 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>GESP（C++）大纲 | 贾心奥利奥Ψ兔兔</title><meta name="keywords" content="OI相关"><meta name="author" content="Jia Ao"><meta name="copyright" content="Jia Ao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="C++编程能力等级认证标准（GESP）一级标准（一）知识点详述 了解计算机的基本构成（CPU，内存，I&#x2F;O设备等），了解Windows、Linux等操作系统基本概念和常见操作，了解计算机的历史及在现代社会中的常见应用。 熟悉集成开发环境使用（例如DevC++）：创建文件、编辑文件、保存文件、编译、解释、调试。 掌握基础的cin语句、scanf语句、cout语句、printf语句，赋值语句">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GESP（C++）大纲">
+<meta property="og:url" content="http://example.com/2026/05/24/GESP%EF%BC%88C-%EF%BC%89%E5%A4%A7%E7%BA%B2/index.html">
+<meta property="og:site_name" content="贾心奥利奥Ψ兔兔">
+<meta property="og:description" content="C++编程能力等级认证标准（GESP）一级标准（一）知识点详述 了解计算机的基本构成（CPU，内存，I&#x2F;O设备等），了解Windows、Linux等操作系统基本概念和常见操作，了解计算机的历史及在现代社会中的常见应用。 熟悉集成开发环境使用（例如DevC++）：创建文件、编辑文件、保存文件、编译、解释、调试。 掌握基础的cin语句、scanf语句、cout语句、printf语句，赋值语句">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/photo/background/33.jpg">
+<meta property="article:published_time" content="2026-05-24T08:10:07.000Z">
+<meta property="article:modified_time" content="2026-05-24T09:38:51.562Z">
+<meta property="article:author" content="Jia Ao">
+<meta property="article:tag" content="OI相关">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/photo/background/33.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2026/05/24/GESP%EF%BC%88C-%EF%BC%89%E5%A4%A7%E7%BA%B2/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.clarity.ms"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "e6351zvwuc");</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":33,"languages":{"author":"作者: Jia Ao","link":"链接: ","source":"来源: 贾心奥利奥Ψ兔兔","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'GESP（C++）大纲',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2026-05-24 17:38:51'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/jiazai.css"><link rel="stylesheet" href="/css/title.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/photo/touxiang.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">25</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/box/"><i class="fa-fw fas fa-book"></i><span> 程序员</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/photo/background/33.jpg')"><nav id="nav"><span id="blog_name"></span><span id="blog_name"><a id="site-name" onclick="btf.scrollToDest(0, 500)" data-title="欢迎光临兔兔小窝，愿你有愉快的一天">GESP（C++）大纲</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/box/"><i class="fa-fw fas fa-book"></i><span> 程序员</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">GESP（C++）大纲</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-05-24T08:10:07.000Z" title="发表于 2026-05-24 16:10:07">2026-05-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-05-24T09:38:51.562Z" title="更新于 2026-05-24 17:38:51">2026-05-24</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/C-OI/">C++ OI</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">5.7k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>17分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="GESP（C++）大纲"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="C-编程能力等级认证标准（GESP）"><a href="#C-编程能力等级认证标准（GESP）" class="headerlink" title="C++编程能力等级认证标准（GESP）"></a>C++编程能力等级认证标准（GESP）</h1><h2 id="一级标准"><a href="#一级标准" class="headerlink" title="一级标准"></a>一级标准</h2><h3 id="（一）知识点详述"><a href="#（一）知识点详述" class="headerlink" title="（一）知识点详述"></a>（一）知识点详述</h3><ol>
+<li>了解计算机的基本构成（CPU，内存，I&#x2F;O设备等），了解Windows、Linux等操作系统基本概念和常见操作，了解计算机的历史及在现代社会中的常见应用。</li>
+<li>熟悉集成开发环境使用（例如DevC++）：创建文件、编辑文件、保存文件、编译、解释、调试。</li>
+<li>掌握基础的cin语句、scanf语句、cout语句、printf语句，赋值语句等。</li>
+<li>掌握标识符、关键字、常量、变量、表达式的概念。</li>
+<li>掌握常量与变量的命名、定义、作用、初始化与赋值以及变量的自加与自减运算。</li>
+<li>掌握基础算术表达式：加、减、乘、除、整除、求余。</li>
+<li>掌握逻辑运算与（&amp;&amp;）、或（||）、非（！）。</li>
+<li>掌握关系运算：大于、大于等于、小于、小于等于、等于、不等于。</li>
+<li>掌握基础的数据类型的定义和使用（整型、实数型、字符型、布尔型）。</li>
+<li>掌握顺序结构程序的编写。</li>
+<li>掌握分支结构程序的编写，掌握if语句、if-else语句、switch语句，了解三目运算。</li>
+<li>掌握循环结构程序的编写，掌握for、while、do-while循环语句的使用以及continue语句和break语句在循环中的应用。</li>
+<li>理解程序的注释和调试的概念。</li>
+</ol>
+<h3 id="（二）考核目标"><a href="#（二）考核目标" class="headerlink" title="（二）考核目标"></a>（二）考核目标</h3><p>学生通过计算机基础知识的学习，了解计算机的构成与操作，以及计算机的发展历程。通过编程基础知识以及语句的掌握，可以独立完成简单功能的顺序结构、分支结构、循环结构的程序。</p>
+<h3 id="（三）知识块"><a href="#（三）知识块" class="headerlink" title="（三）知识块"></a>（三）知识块</h3><ul>
+<li>计算机基础知识</li>
+<li>集成开发环境</li>
+<li>结构化程序设计</li>
+<li>程序的基本语句</li>
+<li>程序的基本概念</li>
+<li>基本运算</li>
+<li>基本数据类型</li>
+</ul>
+<h3 id="（四）知识点描述"><a href="#（四）知识点描述" class="headerlink" title="（四）知识点描述"></a>（四）知识点描述</h3><table>
+<thead>
+<tr>
+<th align="left">编号</th>
+<th align="left">知识块</th>
+<th align="left">知识点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left">计算机基础知识</td>
+<td align="left">计算机的软硬件组成、常见操作、发展历程</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">集成开发环境</td>
+<td align="left">创建文件、编辑文件、保存文件、编译、解释、调试</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">结构化程序设计</td>
+<td align="left">顺序结构、分支结构、循环结构</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">程序的基本语句</td>
+<td align="left">cin语句、scanf语句、cout语句、printf语句、赋值语句、复合语句、if语句、switch语句、for语句、while语句、do while语句</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">程序的基本概念</td>
+<td align="left">标识符、关键字、常量、变量、表达式的概念；常量与变量的命名、定义、作用；程序的注释</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">基本运算</td>
+<td align="left">算术运算、逻辑运算、关系运算、变量自增与自减运算、三目运算、位运算</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">基本数据类型</td>
+<td align="left">整数型: int, long long；实数型: float, double；字符型: char；布尔型: bool</td>
+</tr>
+</tbody></table>
+<h3 id="（五）题型分布"><a href="#（五）题型分布" class="headerlink" title="（五）题型分布"></a>（五）题型分布</h3><ul>
+<li>单选题：15道（2分&#x2F;道）</li>
+<li>判断题：10道（2分&#x2F;道）</li>
+<li>编程题：2道（25分&#x2F;道）</li>
+</ul>
+<p><strong>考试时间：120分钟</strong></p>
+<hr>
+<h2 id="二级标准"><a href="#二级标准" class="headerlink" title="二级标准"></a>二级标准</h2><h3 id="（一）知识点详述-1"><a href="#（一）知识点详述-1" class="headerlink" title="（一）知识点详述"></a>（一）知识点详述</h3><ol>
+<li>了解计算机存储的基本概念及分类，了解随机存储器（RAM）、只读存储器（ROM）和高速缓冲存储器（Cache）的功能及区别。</li>
+<li>了解计算机网络的概念，了解计算机网络的分类（广域网（WAN）、城域网（MAN）、局域网（LAN）），了解计算机网络的层级结构及作用（TCP&#x2F;IP四层模型与OSI七层模型），了解不同层级的重要协议，了解IP地址及子网划分。</li>
+<li>了解程序设计语言的几大分类及特点（机器语言、汇编语言、高级语言），了解常见的高级语言（C++、Python等）。</li>
+<li>了解流程图的概念及基本表示符号，掌握绘制流程图的方法，能正确使用流程图描述程序设计的三种基本结构。</li>
+<li>了解编码的基本概念，了解ASCII编码原理，能识别常用字符的ASCII码（空格：32、“0”：48、“A”：65、“a”：97），并掌握ASCII码和字符之间相互转换的方法。</li>
+<li>掌握数据类型的转换：强制类型转换和隐式类型转换。</li>
+<li>掌握多层分支结构，掌握if语句、if…else语句、switch语句，及相互嵌套的方法。</li>
+<li>掌握多层循环结构，掌握for语句、while语句、do…while语句，及相互嵌套的方法。</li>
+<li>掌握常用的数学函数：绝对值函数、平方根函数、最大值函数、最小值函数、随机数函数，理解相应的算法原理。</li>
+</ol>
+<h3 id="（二）考核目标-1"><a href="#（二）考核目标-1" class="headerlink" title="（二）考核目标"></a>（二）考核目标</h3><p>通过计算机基础知识的学习，了解计算机的存储与网络知识、程序设计语言分类及特点、常见的编程语言和绘制流程图的方法。通过C++知识的学习，掌握数据类型的转换方法及数学库函数的使用，可以独立完成多分支结构与循环结构的程序。</p>
+<h3 id="（三）知识块-1"><a href="#（三）知识块-1" class="headerlink" title="（三）知识块"></a>（三）知识块</h3><ul>
+<li>计算机存储与网络</li>
+<li>程序设计语言</li>
+<li>流程图</li>
+<li>ASCII编码</li>
+<li>数据类型转换</li>
+<li>多层分支结构</li>
+<li>多层循环结构</li>
+<li>数学函数</li>
+</ul>
+<h3 id="（四）知识点描述-1"><a href="#（四）知识点描述-1" class="headerlink" title="（四）知识点描述"></a>（四）知识点描述</h3><table>
+<thead>
+<tr>
+<th align="left">编号</th>
+<th align="left">知识块</th>
+<th align="left">知识点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left">计算机存储与网络</td>
+<td align="left">ROM、RAM、CACHE；计算机网络分类；TCP&#x2F;IP四层模型与OSI七层模型；IP地址及子网划分</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">程序设计语言</td>
+<td align="left">程序设计语言分类；常见的高级语言</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">流程图</td>
+<td align="left">流程图的概念、绘制流程图、描述流程图</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">ASCII编码</td>
+<td align="left">常见字符的ASCII编码、字符编码之间的相互转换</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">数据类型转换</td>
+<td align="left">强制类型转换；隐式类型转换</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">多层分支结构</td>
+<td align="left">if语句、if…else语句、switch语句的嵌套</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">多层循环语句</td>
+<td align="left">while循环、do…while循环、for循环的嵌套</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">数学函数</td>
+<td align="left">绝对值函数：abs()；平方根函数：sqrt()；最大值函数：max()；最小值函数：min()；随机数函数：rand()&#x2F;srand()及相关</td>
+</tr>
+</tbody></table>
+<h3 id="（五）题型分布-1"><a href="#（五）题型分布-1" class="headerlink" title="（五）题型分布"></a>（五）题型分布</h3><ul>
+<li>单选题：15道（2分&#x2F;道）</li>
+<li>判断题：10道（2分&#x2F;道）</li>
+<li>编程题：2道（25分&#x2F;道）</li>
+</ul>
+<p><strong>考试时间：120分钟</strong></p>
+<hr>
+<h2 id="三级标准"><a href="#三级标准" class="headerlink" title="三级标准"></a>三级标准</h2><blockquote>
+<p>注：本级别为C++与Python混合标准，以下仅提取C++相关知识点。</p>
+</blockquote>
+<h3 id="（一）知识点详述（C-部分）"><a href="#（一）知识点详述（C-部分）" class="headerlink" title="（一）知识点详述（C++部分）"></a>（一）知识点详述（C++部分）</h3><ol>
+<li>了解二进制数据编码：原码、反码、补码。</li>
+<li>掌握数据的进制转换：二进制、八进制、十进制、十六进制。</li>
+<li>掌握位运算：与（&amp;）、或（|）、非（~）、异或（^）、左移（&lt;&lt;）、右移（&gt;&gt;）的基本使用方法及原理。</li>
+<li>了解算法的概念与描述，熟练运用自然语言、流程图、伪代码方式来描述算法。</li>
+<li>C++一维数组基本应用。</li>
+<li>掌握字符串及其函数的使用，包括但不限于大小写转换、字符串搜索、分割、替换。</li>
+<li>理解枚举算法、模拟算法的原理及特点，可以解决实际问题。</li>
+</ol>
+<h3 id="（二）考核目标-2"><a href="#（二）考核目标-2" class="headerlink" title="（二）考核目标"></a>（二）考核目标</h3><p>掌握计算机中常用进位制、位运算及数据编码的知识，掌握一维数组、字符串类型及其函数的使用，掌握枚举法、模拟法的原理和运用技巧，对于较简单的实际问题能构造算法、描述算法、实现算法并调试程序。</p>
+<h3 id="（三）知识点描述（C-部分）"><a href="#（三）知识点描述（C-部分）" class="headerlink" title="（三）知识点描述（C++部分）"></a>（三）知识点描述（C++部分）</h3><table>
+<thead>
+<tr>
+<th align="left">编号</th>
+<th align="left">知识块</th>
+<th align="left">知识点</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left">数据编码</td>
+<td align="left">原码、反码、补码</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">进制转换</td>
+<td align="left">二进制、八进制、十进制、十六进制</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">位运算</td>
+<td align="left">与（&amp;）、或（</td>
+<td>）、非（~）、异或（^）、左移（&lt;&lt;）、右移（&gt;&gt;）</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">算法与描述</td>
+<td align="left">枚举法、模拟法；自然语言描述、流程图描述、伪代码描述</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">数据结构</td>
+<td align="left">C++一维数组</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">字符串及其函数</td>
+<td align="left">大小写转换、字符串搜索、分割、替换等</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="（四）题型分布"><a href="#（四）题型分布" class="headerlink" title="（四）题型分布"></a>（四）题型分布</h3><ul>
+<li>单选题：15道（2分&#x2F;道）</li>
+<li>判断题：10道（2分&#x2F;道）</li>
+<li>编程题：2道（25分&#x2F;道）</li>
+</ul>
+<p><strong>考试时间：120分钟</strong></p>
+<hr>
+<h2 id="四级标准"><a href="#四级标准" class="headerlink" title="四级标准"></a>四级标准</h2><h3 id="（一）知识点详述（C-部分）-1"><a href="#（一）知识点详述（C-部分）-1" class="headerlink" title="（一）知识点详述（C++部分）"></a>（一）知识点详述（C++部分）</h3><ol>
+<li>理解C++指针类型的概念，掌握指针类型变量的定义、赋值、解引用。</li>
+<li>掌握C++结构体、二维及多维数组的基本概念及使用。</li>
+<li>理解模块化编程思想，掌握函数的声明、定义及调用，掌握形参与实参的概念及区别。</li>
+<li>掌握变量作用域的概念，理解全局变量与局部变量的区别。</li>
+<li>掌握函数参数的传递方式：C++值传递、引用传递、指针传递。</li>
+<li>掌握递推算法基本思想、递推关系式的推导以及递推问题求解。</li>
+<li>掌握排序算法的概念，了解内排序和外排序的概念及差别，理解排序算法的时间复杂度、空间复杂度、使用场景以及稳定性。</li>
+<li>掌握排序算法中的冒泡排序、插入排序、选择排序的算法思想、排序步骤及代码实现。</li>
+<li>简单算法复杂度的估算，含多项式、指数复杂度。</li>
+<li>掌握文件操作中的重定向，实现文件读写操作，了解文本文件的分类，掌握写操作、读操作、读写操作。</li>
+<li>了解异常处理机制，掌握异常处理的常用方法。</li>
+</ol>
+<h3 id="（二）考核目标-3"><a href="#（二）考核目标-3" class="headerlink" title="（二）考核目标"></a>（二）考核目标</h3><p>掌握C++指针类型、二维及多维数组的基本使用。通过函数相关知识的学习，掌握模块化设计思想，具备编写自定义函数程序的能力。掌握文件读写操作，并通过对排序算法、递推法的学习，可以根据不同的使用场景，合理选择最优的算法。</p>
+<h3 id="（三）知识块-2"><a href="#（三）知识块-2" class="headerlink" title="（三）知识块"></a>（三）知识块</h3><ul>
+<li>函数</li>
+<li>C++指针</li>
+<li>二维及多维数组</li>
+<li>结构体</li>
+<li>递推算法</li>
+<li>排序算法</li>
+<li>文件操作</li>
+<li>异常处理</li>
+</ul>
+<h3 id="（四）知识点描述-2"><a href="#（四）知识点描述-2" class="headerlink" title="（四）知识点描述"></a>（四）知识点描述</h3><table>
+<thead>
+<tr>
+<th align="left">编号</th>
+<th align="left">知识块</th>
+<th align="left">知识点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left">指针</td>
+<td align="left">指针类型，指针类型定义变量，指针类型变量的赋值、解引用</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">二维及多维数组</td>
+<td align="left">C++二维及多维数组的定义、使用</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">结构体</td>
+<td align="left">结构体定义和使用，结构体数组，结构体指针，结构体嵌套结构体，结构体做函数参数，结构体中const使用场景</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">函数</td>
+<td align="left">函数的定义、调用、声明；形参、实参；全局作用域、局部作用域；值传递、引用传递</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">递推算法</td>
+<td align="left">递推算法基本思想、递推关系式推导</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">排序算法</td>
+<td align="left">冒泡排序、插入排序、选择排序；时间复杂度、空间复杂度、算法稳定性；简单算法复杂度的估算，含多项式、指数复杂度</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">文件操作</td>
+<td align="left">文件重定向，读操作、写操作、读写操作</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">异常处理</td>
+<td align="left">异常处理机制和常用方法</td>
+</tr>
+</tbody></table>
+<h3 id="（五）题型分布-2"><a href="#（五）题型分布-2" class="headerlink" title="（五）题型分布"></a>（五）题型分布</h3><ul>
+<li>单选题：15道（2分&#x2F;道）</li>
+<li>判断题：10道（2分&#x2F;道）</li>
+<li>编程题：2道（25分&#x2F;道）</li>
+</ul>
+<p><strong>考试时间：120分钟</strong></p>
+<hr>
+<h2 id="五级标准"><a href="#五级标准" class="headerlink" title="五级标准"></a>五级标准</h2><h3 id="（一）知识点详述（C-部分）-2"><a href="#（一）知识点详述（C-部分）-2" class="headerlink" title="（一）知识点详述（C++部分）"></a>（一）知识点详述（C++部分）</h3><ol>
+<li>掌握初等数论相关知识的概念和应用，包括素数与合数、最大公约数与最小公倍数、同余与模运算、约数与倍数、质因数分解、奇偶性等。</li>
+<li>掌握C++数组模拟高精度加法、减法、乘法和除法的相关知识。</li>
+<li>掌握链表的创建、插入、删除、遍历和反转操作，理解单链表、双链表、循环链表的区别。</li>
+<li>掌握辗转相除法（也称欧几里得算法）、素数表的埃氏筛法和线性筛法、唯一分解定理的原理和应用。</li>
+<li>掌握算法复杂度估算方法（含多项式、对数）。</li>
+<li>掌握二分查找和二分答案算法（也称二分枚举法）的基本原理，能够在有序数组中快速定位目标值。</li>
+<li>掌握递归算法的基本原理，能够应用递归解决问题，能够分析递归算法的时间复杂度和空间复杂度，了解递归的优化策略。</li>
+<li>掌握贪心算法的基本原理，理解最优子结构，能够使用贪心算法解决相关问题。</li>
+<li>掌握分治算法的基本原理，能够使用归并排序和快速排序对数组进行排序。</li>
+</ol>
+<h3 id="（二）考核目标-4"><a href="#（二）考核目标-4" class="headerlink" title="（二）考核目标"></a>（二）考核目标</h3><p>掌握初等数论知识点，能够使用辗转相除法、素数表的埃氏筛法和线性筛法、唯一分解定理等相关知识解决相应的问题。掌握单链表、双链表、循环链表的基本操作方法。掌握算法复杂度估算方法（含多项式、对数），熟悉二分法、分治法、贪心算法和递归算法的算法思想，能够根据实际情况选择合适的算法并完成解决相应的问题。C++掌握使用数组模拟高精度加法、减法、乘法和除法的知识。</p>
+<h3 id="（三）知识块-3"><a href="#（三）知识块-3" class="headerlink" title="（三）知识块"></a>（三）知识块</h3><ul>
+<li>初等数论</li>
+<li>算法复杂度估算</li>
+<li>C++高精度运算</li>
+<li>链表</li>
+<li>二分算法</li>
+<li>递归算法</li>
+<li>分治算法</li>
+<li>贪心算法</li>
+</ul>
+<h3 id="（四）知识点描述-3"><a href="#（四）知识点描述-3" class="headerlink" title="（四）知识点描述"></a>（四）知识点描述</h3><table>
+<thead>
+<tr>
+<th align="left">编号</th>
+<th align="left">知识块</th>
+<th align="left">知识点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left">初等数论</td>
+<td align="left">素数与合数、最大公约数与最小公倍数、同余与模运算、约数与倍数、质因数分解、奇偶性；欧几里得算法；唯一分解定理；素数表的埃氏筛法和线性筛法</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">算法复杂度估算</td>
+<td align="left">含多项式的算法复杂度；含对数的算法复杂度</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">C++高精度运算</td>
+<td align="left">C++数组模拟高精度加法、减法、乘法、除法</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">链表</td>
+<td align="left">单链表、双链表、循环链表的创建、插入、删除、遍历、查找的基本操作</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">二分算法</td>
+<td align="left">二分查找算法；二分答案算法（也称二分枚举法）</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">递归算法</td>
+<td align="left">递归算法的相关概念；递归算法的时间复杂度和空间复杂度；递归的优化策略</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">分治算法</td>
+<td align="left">归并排序算法；快速排序算法</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">贪心算法</td>
+<td align="left">贪心算法的相关概念；最优子结构</td>
+</tr>
+</tbody></table>
+<h3 id="（五）题型分布-3"><a href="#（五）题型分布-3" class="headerlink" title="（五）题型分布"></a>（五）题型分布</h3><ul>
+<li>单选题：15道（2分&#x2F;道）</li>
+<li>判断题：10道（2分&#x2F;道）</li>
+<li>编程题：2道（25分&#x2F;道）</li>
+</ul>
+<p><strong>考试时间：180分钟</strong></p>
+<hr>
+<h2 id="六级标准"><a href="#六级标准" class="headerlink" title="六级标准"></a>六级标准</h2><blockquote>
+<p>注：本级别内容通用，适用于C++。</p>
+</blockquote>
+<h3 id="（一）知识点详述-2"><a href="#（一）知识点详述-2" class="headerlink" title="（一）知识点详述"></a>（一）知识点详述</h3><ol>
+<li>掌握树的基本概念，掌握其构造与遍历的相关算法。</li>
+<li>掌握哈夫曼树、完全二叉树、二叉排序树的相关概念和应用。</li>
+<li>理解哈夫曼编码、格雷编码相关原理并能进行简单应用。</li>
+<li>掌握深度优先搜索算法（DFS）、宽度优先搜索算法（也称广度优先搜索算法，BFS）、二叉树的搜索算法的概念及应用，能够根据现实问题，选择合适的搜索算法。</li>
+<li>掌握简单动态规划的算法思想，能够使用代码解决相应的一维动态规划问题和简单背包问题。</li>
+<li>掌握面向对象的思想，了解封装、继承、多态的基本概念，并掌握类的创建和基本的使用方法。</li>
+<li>掌握栈、队列、循环队列的基本定义，应用场景和常见操作。</li>
+</ol>
+<h3 id="（二）考核目标-5"><a href="#（二）考核目标-5" class="headerlink" title="（二）考核目标"></a>（二）考核目标</h3><p>掌握树的基础知识，并能够分辨和使用哈夫曼树、完全二叉树、二叉排序树。掌握搜索算法，可以根据不同的实际问题选择最优的搜索算法。掌握动态规划的思路和步骤，能够解决一维动态规划问题和简单背包问题。掌握面向对象的概念和特性，了解与面向过程思想的不同之处，并掌握类的创建及其基本使用方法。掌握栈、队列、循环队列的基本定义和常见操作，并可根据实际情况选择合适的数据结构。</p>
+<h3 id="（三）知识点描述"><a href="#（三）知识点描述" class="headerlink" title="（三）知识点描述"></a>（三）知识点描述</h3><table>
+<thead>
+<tr>
+<th align="left">编号</th>
+<th align="left">知识块</th>
+<th align="left">知识点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left">树</td>
+<td align="left">树的基本概念；哈夫曼树；完全二叉树；二叉排序树</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">基于树的编码</td>
+<td align="left">格雷编码；哈夫曼编码</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">搜索算法</td>
+<td align="left">深度优先搜索算法（DFS）；宽度优先搜索算法（BFS）；二叉树的搜索算法</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">简单动态规划</td>
+<td align="left">一维动态规划；简单背包</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">面向对象</td>
+<td align="left">面向对象思想；类的创建和初始化；类的特性:继承、封装、多态</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">栈和队列</td>
+<td align="left">栈；队列；循环队列</td>
+</tr>
+</tbody></table>
+<h3 id="（四）题型分布-1"><a href="#（四）题型分布-1" class="headerlink" title="（四）题型分布"></a>（四）题型分布</h3><ul>
+<li>单选题：15道（2分&#x2F;道）</li>
+<li>判断题：10道（2分&#x2F;道）</li>
+<li>编程题：2道（25分&#x2F;道）</li>
+</ul>
+<p><strong>考试时间：180分钟</strong></p>
+<hr>
+<h2 id="七级标准"><a href="#七级标准" class="headerlink" title="七级标准"></a>七级标准</h2><blockquote>
+<p>注：本级别内容通用，适用于C++。</p>
+</blockquote>
+<h3 id="（一）知识点详述-3"><a href="#（一）知识点详述-3" class="headerlink" title="（一）知识点详述"></a>（一）知识点详述</h3><ol>
+<li>掌握数学库常用函数（三角、对数、指数），三角函数包括sin(x)，cos(x)等；对数函数包括log10(x)：返回x以10为底的对数，log2(x)：返回x以2为底的对数；指数函数包括exp(x)：计算指数函数，返回x的以e为底的指数函数。</li>
+<li>掌握复杂动态规划（二维动态规划、动态规划最值优化）。包括区间动态规划、最长上升子序列（LIS）、最长公共子序列（LCS）等内容，理解基于滚动数组等降低动态规划空间复杂度的方法。</li>
+<li>图的定义及基本图论算法。包括图的定义、图的种类（有向图、无向图），图节点的度的概念。掌握编程时图的数据结构表示，以及基于深度优先搜索（DFS）和广度优先搜索（BFS）的图搜索与遍历方法，图的泛洪（floodfill）算法。</li>
+<li>掌握哈希表的概念与知识及其应用。</li>
+</ol>
+<h3 id="（二）考核目标-6"><a href="#（二）考核目标-6" class="headerlink" title="（二）考核目标"></a>（二）考核目标</h3><p>掌握常用数学库函数，了解相关函数概念与定义。掌握复杂动态规划，包括二维动态规划、求LIS、LCS等内容，并掌握利用滚动数组等的优化方法。了解图的定义与广搜和深搜的算法，泛洪算法。了解哈希表的概念和知识。</p>
+<h3 id="（三）知识点描述-1"><a href="#（三）知识点描述-1" class="headerlink" title="（三）知识点描述"></a>（三）知识点描述</h3><table>
+<thead>
+<tr>
+<th align="left">编号</th>
+<th align="left">知识块</th>
+<th align="left">知识点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left">数学库函数</td>
+<td align="left">三角函数；对数函数；指数函数</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">复杂动态规划</td>
+<td align="left">二维动态规划、动态规划最值优化；区间动态规划；求最长上升子序列（LIS）；求最长公共子序列（LCS）；基于滚动数组的动态规划空间复杂度优化</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">图的定义及遍历</td>
+<td align="left">图的概念；图的广度优先遍历；图的深度优先遍历</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">图论算法</td>
+<td align="left">图的泛洪算法（flood fill）</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">哈希表</td>
+<td align="left">哈希表的概念与知识及其应用</td>
+</tr>
+</tbody></table>
+<h3 id="（四）题型分布-2"><a href="#（四）题型分布-2" class="headerlink" title="（四）题型分布"></a>（四）题型分布</h3><ul>
+<li>单选题：15道（2分&#x2F;道）</li>
+<li>判断题：10道（2分&#x2F;道）</li>
+<li>编程题：2道（25分&#x2F;道）</li>
+</ul>
+<p><strong>考试时间：180分钟</strong></p>
+<hr>
+<h2 id="八级标准"><a href="#八级标准" class="headerlink" title="八级标准"></a>八级标准</h2><blockquote>
+<p>注：本级别内容通用，适用于C++。</p>
+</blockquote>
+<h3 id="（一）知识点详述-4"><a href="#（一）知识点详述-4" class="headerlink" title="（一）知识点详述"></a>（一）知识点详述</h3><ol>
+<li>掌握计数原理。包括加法原理和乘法原理。</li>
+<li>掌握排列与组合基础知识。包括排列、组合的基本概念，及能实现基础排列和组合编程问题的一般方法。</li>
+<li>掌握杨辉三角形（又称帕斯卡三角形）的概念。</li>
+<li>掌握倍增法概念。了解倍增法的时间复杂度。</li>
+<li>掌握代数与平面几何基础知识（初中数学部分）。包括方程的概念及一元一次方程、二元一次方程的基本求解技巧，求基础平面几何概念、求基本图形（如长方形、三角形、圆形等）的面积等。</li>
+<li>掌握图论算法及综合应用技巧。包括最小生成树的概念、kruskal算法、prim算法，掌握最短路径的概念、单源最短路径的dijkstra算法、Floyd算法等。理解实现同一功能的不同算法的比较，并可以灵活解决相关问题。</li>
+<li>算法的时间和空间效率分析。能够掌握较为复杂算法的时间和空间复杂度分析方法，能够分析各类算法（包括排序算法、查找算法、树和图的遍历算法、搜索算法、分治及动态规划算法等）的时间和空间复杂度。</li>
+<li>算法优化。理解不同方法求解一个问题在时间复杂度和空间复杂度上的差异，理解使用数学知识辅助求解问题的技巧（如可以用循环求出等差数列的和，也可以用数学公式求出等差数列的和），掌握一般的算法优化技巧。</li>
+</ol>
+<h3 id="（二）考核目标-7"><a href="#（二）考核目标-7" class="headerlink" title="（二）考核目标"></a>（二）考核目标</h3><p>掌握基本计数原理，理解加法原理和乘法原理的区别与使用。掌握排列组合概念，能够实现常见排列组合问题的编程求解方法。掌握杨辉三角形的概念和应用，了解杨辉三角形与组合之间的关系。掌握代数与平面几何的基本知识（限初中数学），能够求解一元一次方程、二元一次方程并掌握平面几何基本知识。掌握较为复杂算法的时间复杂度和空间复杂度分析方法，及其一般的算法优化技巧，能根据数学知识优化算法。</p>
+<h3 id="（三）知识点描述-2"><a href="#（三）知识点描述-2" class="headerlink" title="（三）知识点描述"></a>（三）知识点描述</h3><table>
+<thead>
+<tr>
+<th align="left">编号</th>
+<th align="left">知识块</th>
+<th align="left">知识点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left">计数原理</td>
+<td align="left">加法原理；乘法原理</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">排列与组合</td>
+<td align="left">排列；组合</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">杨辉三角</td>
+<td align="left">杨辉三角的定义；杨辉三角形的实现</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">倍增法</td>
+<td align="left">倍增的概念</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">代数与平面几何</td>
+<td align="left">一元一次方程；二元一次方程；三角形、圆形、长方形面积</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">图论算法及综合应用</td>
+<td align="left">最小生成树的概念、kruskal算法、prim算法；最短路径的概念、dijkstra算法、Floyd算法；图论算法的综合应用与问题求解技巧</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">算法的时间和空间效率分析</td>
+<td align="left">算法时间和空间复杂度的一般分析方法；各类算法（包括排序算法、查找算法、树和图的遍历算法、搜索算法、分治及动态规划算法等）的时间和空间复杂度</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">算法优化</td>
+<td align="left">不同算法求解问题的差异分析；算法优化的一般方法；根据数学知识优化算法的一般方法（包括但不局限于等差、等比数列的求和公式等）</td>
+</tr>
+</tbody></table>
+<h3 id="（四）题型分布-3"><a href="#（四）题型分布-3" class="headerlink" title="（四）题型分布"></a>（四）题型分布</h3><ul>
+<li>单选题：15道（2分&#x2F;道）</li>
+<li>判断题：10道（2分&#x2F;道）</li>
+<li>编程题：2道（25分&#x2F;道）</li>
+</ul>
+<p><strong>考试时间：180分钟</strong></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">Jia Ao</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2026/05/24/GESP%EF%BC%88C-%EF%BC%89%E5%A4%A7%E7%BA%B2/">http://example.com/2026/05/24/GESP（C-）大纲/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">贾心奥利奥Ψ兔兔</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/OI%E7%9B%B8%E5%85%B3/">OI相关</a></div><div class="post_share"><div class="social-share" data-image="/photo/background/33.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/photo/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/photo/wechat.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/photo/zhifubao.jpg" target="_blank"><img class="post-qr-code-img" src="/photo/zhifubao.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2026/05/16/c-%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8/"><img class="prev-cover" src="/photo/background/8.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">c++算法入门</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2026/05/16/C-%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80/" title="C++语法基础"><img class="cover" src="/photo/background/62.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2026-05-16</div><div class="title">C++语法基础</div></div></a></div><div><a href="/2026/05/16/%E4%BB%A3%E7%A0%81%E9%A3%8E%E6%A0%BC/" title="代码风格"><img class="cover" src="/photo/background/43.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2026-05-16</div><div class="title">代码风格</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/photo/touxiang.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Jia Ao</div><div class="author-info__description">个人笔记分享</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">25</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/jiaxinaoliao/"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/jiaxinaoliao" target="_blank" title="Github"><i class="fab fa-github"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">有问题加群
+恐龙小窝
+QQ：xxxxxx
+</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#C-%E7%BC%96%E7%A8%8B%E8%83%BD%E5%8A%9B%E7%AD%89%E7%BA%A7%E8%AE%A4%E8%AF%81%E6%A0%87%E5%87%86%EF%BC%88GESP%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">C++编程能力等级认证标准（GESP）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E5%87%86"><span class="toc-number">1.1.</span> <span class="toc-text">一级标准</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E7%9F%A5%E8%AF%86%E7%82%B9%E8%AF%A6%E8%BF%B0"><span class="toc-number">1.1.1.</span> <span class="toc-text">（一）知识点详述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E8%80%83%E6%A0%B8%E7%9B%AE%E6%A0%87"><span class="toc-number">1.1.2.</span> <span class="toc-text">（二）考核目标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E7%9F%A5%E8%AF%86%E5%9D%97"><span class="toc-number">1.1.3.</span> <span class="toc-text">（三）知识块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%8F%8F%E8%BF%B0"><span class="toc-number">1.1.4.</span> <span class="toc-text">（四）知识点描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%94%EF%BC%89%E9%A2%98%E5%9E%8B%E5%88%86%E5%B8%83"><span class="toc-number">1.1.5.</span> <span class="toc-text">（五）题型分布</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E7%BA%A7%E6%A0%87%E5%87%86"><span class="toc-number">1.2.</span> <span class="toc-text">二级标准</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E7%9F%A5%E8%AF%86%E7%82%B9%E8%AF%A6%E8%BF%B0-1"><span class="toc-number">1.2.1.</span> <span class="toc-text">（一）知识点详述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E8%80%83%E6%A0%B8%E7%9B%AE%E6%A0%87-1"><span class="toc-number">1.2.2.</span> <span class="toc-text">（二）考核目标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E7%9F%A5%E8%AF%86%E5%9D%97-1"><span class="toc-number">1.2.3.</span> <span class="toc-text">（三）知识块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%8F%8F%E8%BF%B0-1"><span class="toc-number">1.2.4.</span> <span class="toc-text">（四）知识点描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%94%EF%BC%89%E9%A2%98%E5%9E%8B%E5%88%86%E5%B8%83-1"><span class="toc-number">1.2.5.</span> <span class="toc-text">（五）题型分布</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E7%BA%A7%E6%A0%87%E5%87%86"><span class="toc-number">1.3.</span> <span class="toc-text">三级标准</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E7%9F%A5%E8%AF%86%E7%82%B9%E8%AF%A6%E8%BF%B0%EF%BC%88C-%E9%83%A8%E5%88%86%EF%BC%89"><span class="toc-number">1.3.1.</span> <span class="toc-text">（一）知识点详述（C++部分）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E8%80%83%E6%A0%B8%E7%9B%AE%E6%A0%87-2"><span class="toc-number">1.3.2.</span> <span class="toc-text">（二）考核目标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%8F%8F%E8%BF%B0%EF%BC%88C-%E9%83%A8%E5%88%86%EF%BC%89"><span class="toc-number">1.3.3.</span> <span class="toc-text">（三）知识点描述（C++部分）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89%E9%A2%98%E5%9E%8B%E5%88%86%E5%B8%83"><span class="toc-number">1.3.4.</span> <span class="toc-text">（四）题型分布</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E7%BA%A7%E6%A0%87%E5%87%86"><span class="toc-number">1.4.</span> <span class="toc-text">四级标准</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E7%9F%A5%E8%AF%86%E7%82%B9%E8%AF%A6%E8%BF%B0%EF%BC%88C-%E9%83%A8%E5%88%86%EF%BC%89-1"><span class="toc-number">1.4.1.</span> <span class="toc-text">（一）知识点详述（C++部分）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E8%80%83%E6%A0%B8%E7%9B%AE%E6%A0%87-3"><span class="toc-number">1.4.2.</span> <span class="toc-text">（二）考核目标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E7%9F%A5%E8%AF%86%E5%9D%97-2"><span class="toc-number">1.4.3.</span> <span class="toc-text">（三）知识块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%8F%8F%E8%BF%B0-2"><span class="toc-number">1.4.4.</span> <span class="toc-text">（四）知识点描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%94%EF%BC%89%E9%A2%98%E5%9E%8B%E5%88%86%E5%B8%83-2"><span class="toc-number">1.4.5.</span> <span class="toc-text">（五）题型分布</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E7%BA%A7%E6%A0%87%E5%87%86"><span class="toc-number">1.5.</span> <span class="toc-text">五级标准</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E7%9F%A5%E8%AF%86%E7%82%B9%E8%AF%A6%E8%BF%B0%EF%BC%88C-%E9%83%A8%E5%88%86%EF%BC%89-2"><span class="toc-number">1.5.1.</span> <span class="toc-text">（一）知识点详述（C++部分）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E8%80%83%E6%A0%B8%E7%9B%AE%E6%A0%87-4"><span class="toc-number">1.5.2.</span> <span class="toc-text">（二）考核目标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E7%9F%A5%E8%AF%86%E5%9D%97-3"><span class="toc-number">1.5.3.</span> <span class="toc-text">（三）知识块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%8F%8F%E8%BF%B0-3"><span class="toc-number">1.5.4.</span> <span class="toc-text">（四）知识点描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%94%EF%BC%89%E9%A2%98%E5%9E%8B%E5%88%86%E5%B8%83-3"><span class="toc-number">1.5.5.</span> <span class="toc-text">（五）题型分布</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E7%BA%A7%E6%A0%87%E5%87%86"><span class="toc-number">1.6.</span> <span class="toc-text">六级标准</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E7%9F%A5%E8%AF%86%E7%82%B9%E8%AF%A6%E8%BF%B0-2"><span class="toc-number">1.6.1.</span> <span class="toc-text">（一）知识点详述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E8%80%83%E6%A0%B8%E7%9B%AE%E6%A0%87-5"><span class="toc-number">1.6.2.</span> <span class="toc-text">（二）考核目标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%8F%8F%E8%BF%B0"><span class="toc-number">1.6.3.</span> <span class="toc-text">（三）知识点描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89%E9%A2%98%E5%9E%8B%E5%88%86%E5%B8%83-1"><span class="toc-number">1.6.4.</span> <span class="toc-text">（四）题型分布</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E7%BA%A7%E6%A0%87%E5%87%86"><span class="toc-number">1.7.</span> <span class="toc-text">七级标准</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E7%9F%A5%E8%AF%86%E7%82%B9%E8%AF%A6%E8%BF%B0-3"><span class="toc-number">1.7.1.</span> <span class="toc-text">（一）知识点详述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E8%80%83%E6%A0%B8%E7%9B%AE%E6%A0%87-6"><span class="toc-number">1.7.2.</span> <span class="toc-text">（二）考核目标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%8F%8F%E8%BF%B0-1"><span class="toc-number">1.7.3.</span> <span class="toc-text">（三）知识点描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89%E9%A2%98%E5%9E%8B%E5%88%86%E5%B8%83-2"><span class="toc-number">1.7.4.</span> <span class="toc-text">（四）题型分布</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AB%E7%BA%A7%E6%A0%87%E5%87%86"><span class="toc-number">1.8.</span> <span class="toc-text">八级标准</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E7%9F%A5%E8%AF%86%E7%82%B9%E8%AF%A6%E8%BF%B0-4"><span class="toc-number">1.8.1.</span> <span class="toc-text">（一）知识点详述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E8%80%83%E6%A0%B8%E7%9B%AE%E6%A0%87-7"><span class="toc-number">1.8.2.</span> <span class="toc-text">（二）考核目标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E7%9F%A5%E8%AF%86%E7%82%B9%E6%8F%8F%E8%BF%B0-2"><span class="toc-number">1.8.3.</span> <span class="toc-text">（三）知识点描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89%E9%A2%98%E5%9E%8B%E5%88%86%E5%B8%83-3"><span class="toc-number">1.8.4.</span> <span class="toc-text">（四）题型分布</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/05/24/GESP%EF%BC%88C-%EF%BC%89%E5%A4%A7%E7%BA%B2/" title="GESP（C++）大纲"><img src="/photo/background/33.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="GESP（C++）大纲"/></a><div class="content"><a class="title" href="/2026/05/24/GESP%EF%BC%88C-%EF%BC%89%E5%A4%A7%E7%BA%B2/" title="GESP（C++）大纲">GESP（C++）大纲</a><time datetime="2026-05-24T08:10:07.000Z" title="发表于 2026-05-24 16:10:07">2026-05-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/05/16/c-%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8/" title="c++算法入门"><img src="/photo/background/8.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="c++算法入门"/></a><div class="content"><a class="title" href="/2026/05/16/c-%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8/" title="c++算法入门">c++算法入门</a><time datetime="2026-05-16T05:05:07.000Z" title="发表于 2026-05-16 13:05:07">2026-05-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/05/16/%E4%BB%A3%E7%A0%81%E9%A3%8E%E6%A0%BC/" title="代码风格"><img src="/photo/background/43.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="代码风格"/></a><div class="content"><a class="title" href="/2026/05/16/%E4%BB%A3%E7%A0%81%E9%A3%8E%E6%A0%BC/" title="代码风格">代码风格</a><time datetime="2026-05-16T02:56:34.000Z" title="发表于 2026-05-16 10:56:34">2026-05-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/05/16/c-%E8%AF%AD%E6%B3%95%E8%BF%9B%E9%98%B6/" title="c++语法进阶"><img src="/photo/background/2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="c++语法进阶"/></a><div class="content"><a class="title" href="/2026/05/16/c-%E8%AF%AD%E6%B3%95%E8%BF%9B%E9%98%B6/" title="c++语法进阶">c++语法进阶</a><time datetime="2026-05-16T02:37:16.000Z" title="发表于 2026-05-16 10:37:16">2026-05-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/05/16/C-%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80/" title="C++语法基础"><img src="/photo/background/62.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C++语法基础"/></a><div class="content"><a class="title" href="/2026/05/16/C-%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80/" title="C++语法基础">C++语法基础</a><time datetime="2026-05-16T01:41:33.000Z" title="发表于 2026-05-16 09:41:33">2026-05-16</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/photo/background/33.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2026 By Jia Ao</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a target="_blank" rel="noopener" href="https://jiaxinaoliao.github.io/">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
+
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: 'Ov23liagQUFvLxGCoLwT',
+      clientSecret: '4ef2304f954bedc8d78005d748fec96de786208f',
+      repo: 'blogtalk',
+      owner: 'jiaxinaoliao',
+      admin: ['jiaxinaoliao'],
+      id: '3f6cc6179b7fd319be1333f46f2ed530',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    getScript('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !true) {
+  if (true) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script src="/js/jiazai.js"></script><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
