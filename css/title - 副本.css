@@ -1,0 +1,23 @@
+/* 1. 只修改文章正文内容 */
+.post-content {
+    font-size: 20px;  /* 将文章正文文字大小改为 18px */
+}
+
+/* 2. 更精确地控制不同元素 */
+#post .post-content p {
+    font-size: 18px;  /* 文章内的段落 */
+}
+
+#post .post-content h1 {
+    font-size: 22px;  /* 文章内的一级标题 */
+}
+
+#post .post-content li {
+    font-size: 18px;  /* 文章内的列表项 */
+}
+
+/* 3. 修改代码块的字体 */
+#post figure.highlight,
+#post pre {
+    font-size: 18px;  /* 代码字体大小 */
+}
