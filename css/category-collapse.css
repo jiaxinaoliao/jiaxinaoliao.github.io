@@ -1,0 +1,59 @@
+/* ===== 分类折叠 - 文章列表展开/折叠 ===== */
+
+/* 默认隐藏所有文章 */
+.article-sort-item {
+  display: none !important;
+}
+
+/* 当前激活的分类下的文章显示 */
+.category-list-item.active ~ .article-sort-item,
+.category-list-item.active .article-sort-item {
+  display: flex !important;
+}
+
+/* 如果文章列表在分类标题后面（兄弟关系） */
+.category-list-item.active + .article-sort-list .article-sort-item,
+.category-list-item.active ~ .article-sort-list .article-sort-item {
+  display: flex !important;
+}
+
+/* 分类标题样式 */
+.category-list-link {
+  cursor: pointer !important;
+  user-select: none;
+  transition: color 0.25s ease;
+  display: inline-block;
+}
+
+.category-list-link:hover {
+  color: #49b1f5 !important;
+}
+
+.category-list-link::after {
+  content: " ▶";
+  font-size: 10px;
+  color: #b0b0b0;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+.category-list-item.active > .category-list-link::after {
+  transform: rotate(90deg);
+  color: #49b1f5;
+}
+
+/* 平滑动画 */
+.article-sort-item {
+  animation: fadeSlideIn 0.3s ease;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

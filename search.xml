@@ -4,32 +4,6 @@
   
     
     <entry>
-      <title>GESP一级</title>
-      <link href="/2026/09/05/GESP%E4%B8%80%E7%BA%A7/"/>
-      <url>/2026/09/05/GESP%E4%B8%80%E7%BA%A7/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>ybt第一章 C++语言入门</title>
-      <link href="/2026/09/05/ybt%E7%AC%AC%E4%B8%80%E7%AB%A0-C-%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8/"/>
-      <url>/2026/09/05/ybt%E7%AC%AC%E4%B8%80%E7%AB%A0-C-%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>C++算法进阶</title>
       <link href="/2026/05/16/C++-%E7%AE%97%E6%B3%95%E8%BF%9B%E9%98%B6/"/>
       <url>/2026/05/16/C++-%E7%AE%97%E6%B3%95%E8%BF%9B%E9%98%B6/</url>
@@ -255,11 +229,214 @@
     
     
     <entry>
-      <title>magaooj一阶第一课</title>
+      <title>GESP一级</title>
+      <link href="/2026/01/03/GESP%E4%B8%80%E7%BA%A7/"/>
+      <url>/2026/01/03/GESP%E4%B8%80%E7%BA%A7/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt"     data-hbe-format="4"     data-wpm="密码错误， 重试"     data-whm="密码错误， 重试"     data-salt="815e84a000688ea06b083dff46228d3aed77b1cbec3eb60fcf40b5e9e0cacf39"     data-nonce="9f037cbc650112a84ad2c075"     data-kdf-iterations="600000"     data-auto-save="false">  <script id="hbeData" type="hbeData">    5c55a96f97f35809715a03f5d8e95fb1  </script>  <div class="hbe hbe-content">    <form id="hbeForm" class="hbe hbe-form" onsubmit="return false">      <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">需要密码查看</span>      </label>    </div>      <button class="hbe hbe-button" type="submit">Decrypt</button>      <div class="hbe hbe-error" role="alert" aria-live="polite"></div>    </form>  </div></div><script data-pjax src="/lib/hbe.9e70f1e1d2.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 题解 </category>
+          
+          <category> GESP </category>
+          
+          <category> 一级 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 题解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第一章 C++语言入门</title>
+      <link href="/2026/01/02/ybt%E7%AC%AC%E4%B8%80%E7%AB%A0-C-%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8/"/>
+      <url>/2026/01/02/ybt%E7%AC%AC%E4%B8%80%E7%AB%A0-C-%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt"     data-hbe-format="4"     data-wpm="密码错误， 重试"     data-whm="密码错误， 重试"     data-salt="a23a63fdbfdefcf6466de9168b625c2e68d333f276182e1cc9aee560ae312ef0"     data-nonce="616895f9195588d42b1b0ba7"     data-kdf-iterations="600000"     data-auto-save="false">  <script id="hbeData" type="hbeData">    3c057cb907630f52ddb932d46b61023c  </script>  <div class="hbe hbe-content">    <form id="hbeForm" class="hbe hbe-form" onsubmit="return false">      <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">需要密码查看</span>      </label>    </div>      <button class="hbe hbe-button" type="submit">Decrypt</button>      <div class="hbe hbe-error" role="alert" aria-live="polite"></div>    </form>  </div></div><script data-pjax src="/lib/hbe.9e70f1e1d2.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 题解 </category>
+          
+          <category> ybt </category>
+          
+          <category> 第一章 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 题解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第二章 顺序结构程序设计</title>
+      <link href="/2026/01/02/ybt%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E9%A1%BA%E5%BA%8F%E7%BB%93%E6%9E%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+      <url>/2026/01/02/ybt%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E9%A1%BA%E5%BA%8F%E7%BB%93%E6%9E%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt"     data-hbe-format="4"     data-wpm="密码错误， 重试"     data-whm="密码错误， 重试"     data-salt="7ac4ea7e067059d378da97dc8cbca71e812594006e11f108ea0d1fb567f2c276"     data-nonce="16560a04bfda630ec70a811b"     data-kdf-iterations="600000"     data-auto-save="false">  <script id="hbeData" type="hbeData">    cd3ad0b4bcd91cab6d8184fbe0490fa3  </script>  <div class="hbe hbe-content">    <form id="hbeForm" class="hbe hbe-form" onsubmit="return false">      <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">需要密码查看</span>      </label>    </div>      <button class="hbe hbe-button" type="submit">Decrypt</button>      <div class="hbe hbe-error" role="alert" aria-live="polite"></div>    </form>  </div></div><script data-pjax src="/lib/hbe.9e70f1e1d2.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 题解 </category>
+          
+          <category> ybt </category>
+          
+          <category> 第二章 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 题解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第三章 程序的控制结构</title>
+      <link href="/2026/01/02/ybt%E7%AC%AC%E4%B8%89%E7%AB%A0-%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%8E%A7%E5%88%B6%E7%BB%93%E6%9E%84/"/>
+      <url>/2026/01/02/ybt%E7%AC%AC%E4%B8%89%E7%AB%A0-%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%8E%A7%E5%88%B6%E7%BB%93%E6%9E%84/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt"     data-hbe-format="4"     data-wpm="密码错误， 重试"     data-whm="密码错误， 重试"     data-salt="4ea652df9cab74d93f8e2c816985cda42e539780624c2bf0b6c4d7251196bd9e"     data-nonce="9c47abe0ed6a8e4bc0e760f2"     data-kdf-iterations="600000"     data-auto-save="false">  <script id="hbeData" type="hbeData">    a6cd7581537296c24e72860138609755  </script>  <div class="hbe hbe-content">    <form id="hbeForm" class="hbe hbe-form" onsubmit="return false">      <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">需要密码查看</span>      </label>    </div>      <button class="hbe hbe-button" type="submit">Decrypt</button>      <div class="hbe hbe-error" role="alert" aria-live="polite"></div>    </form>  </div></div><script data-pjax src="/lib/hbe.9e70f1e1d2.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 题解 </category>
+          
+          <category> ybt </category>
+          
+          <category> 第三章 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 题解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第四章 循环结构的程序设计</title>
+      <link href="/2026/01/02/ybt%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84%E7%9A%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+      <url>/2026/01/02/ybt%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84%E7%9A%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt"     data-hbe-format="4"     data-wpm="密码错误， 重试"     data-whm="密码错误， 重试"     data-salt="3fadf14c1d2f7080083287f8bf6375b2ba720a0e3f0ada593a630253f4d94c28"     data-nonce="af40313d939aad513dbae9c2"     data-kdf-iterations="600000"     data-auto-save="false">  <script id="hbeData" type="hbeData">    56696dc5ad8570c0ce7725ddc67ee5e9  </script>  <div class="hbe hbe-content">    <form id="hbeForm" class="hbe hbe-form" onsubmit="return false">      <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">需要密码查看</span>      </label>    </div>      <button class="hbe hbe-button" type="submit">Decrypt</button>      <div class="hbe hbe-error" role="alert" aria-live="polite"></div>    </form>  </div></div><script data-pjax src="/lib/hbe.9e70f1e1d2.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 题解 </category>
+          
+          <category> ybt </category>
+          
+          <category> 第四章 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 题解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ybt第五章 数组</title>
+      <link href="/2026/01/02/ybt%E7%AC%AC%E4%BA%94%E7%AB%A0-%E6%95%B0%E7%BB%84/"/>
+      <url>/2026/01/02/ybt%E7%AC%AC%E4%BA%94%E7%AB%A0-%E6%95%B0%E7%BB%84/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt"     data-hbe-format="4"     data-wpm="密码错误， 重试"     data-whm="密码错误， 重试"     data-salt="7a5b3d4214eb9d5b1d2666a14be19b9506813a48691807d3a7e337b3b73b5822"     data-nonce="ddbf81c36c1f660a7b5c8390"     data-kdf-iterations="600000"     data-auto-save="false">  <script id="hbeData" type="hbeData">    154a185b2341c913f77bd27ab88b2292  </script>  <div class="hbe hbe-content">    <form id="hbeForm" class="hbe hbe-form" onsubmit="return false">      <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">需要密码查看</span>      </label>    </div>      <button class="hbe hbe-button" type="submit">Decrypt</button>      <div class="hbe hbe-error" role="alert" aria-live="polite"></div>    </form>  </div></div><script data-pjax src="/lib/hbe.9e70f1e1d2.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 题解 </category>
+          
+          <category> ybt </category>
+          
+          <category> 第五章 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 题解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ybt第七章 结构体</title>
+      <link href="/2026/01/02/ybt%E7%AC%AC%E4%B8%83%E7%AB%A0-%E7%BB%93%E6%9E%84%E4%BD%93/"/>
+      <url>/2026/01/02/ybt%E7%AC%AC%E4%B8%83%E7%AB%A0-%E7%BB%93%E6%9E%84%E4%BD%93/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt"     data-hbe-format="4"     data-wpm="密码错误， 重试"     data-whm="密码错误， 重试"     data-salt="e0ffe01890cca4f109f81aba2271a335bdc1c20e9971bf0db60830168e4863ac"     data-nonce="3ca3ad373237d8822f12b55d"     data-kdf-iterations="600000"     data-auto-save="false">  <script id="hbeData" type="hbeData">    03620769704e18c8dba1a38bbe1c1491  </script>  <div class="hbe hbe-content">    <form id="hbeForm" class="hbe hbe-form" onsubmit="return false">      <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">需要密码查看</span>      </label>    </div>      <button class="hbe hbe-button" type="submit">Decrypt</button>      <div class="hbe hbe-error" role="alert" aria-live="polite"></div>    </form>  </div></div><script data-pjax src="/lib/hbe.9e70f1e1d2.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 题解 </category>
+          
+          <category> ybt </category>
+          
+          <category> 第七章 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 题解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第一课 认识C++01</title>
       <link href="/2026/01/01/magaooj%E4%B8%80%E9%98%B6%E7%AC%AC%E4%B8%80%E8%AF%BE/"/>
       <url>/2026/01/01/magaooj%E4%B8%80%E9%98%B6%E7%AC%AC%E4%B8%80%E8%AF%BE/</url>
       
-        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt"     data-hbe-format="4"     data-wpm="密码错误， 重试"     data-whm="密码错误， 重试"     data-salt="1c433e0c337ddf58a89bc8f386a13eaa47848ed3a051c85cb41699e894275683"     data-nonce="95e9f9e3675c8f622bb2b24e"     data-kdf-iterations="600000"     data-auto-save="false">  <script id="hbeData" type="hbeData">    fedbac39e0cfb71be94cb392451bf72c0b42117ec4a37843a5457461515b6253adb243008cbad06284152de364965b048beb56e8a9338e034f90f7f3a5e45bac53e57034adfcec0053b6d79f5f558e5b64ecec50d71593a234647c4c1cdfd5d984a3c70578a616a490ac7dea2b15c438d24b5fe7cba55b9fff2d46c3f91bcf1a2aa4db91a232ce71fac058349995401a1363f0abed8d3b7a857b43765b2d783d3b67633c41fce464beb9e5d4a0e0517ce2c7975763fbbca47626bea12a545eda9ef2e8fc884f811978b1f14d0a08f059f9539854b88c5b94e2930b5a0c1e957e2b630eb54127a19757a7c7ebb902c57f84909037a229c4a267401ffda1583b983a940be550b317b10dd0a467a5be500fe875daad1bf56b1e02e27e9e32841444afc8651d09361f41e27ae7dbe46f6f078676bb75c7f76b20fefbc97a4af8534b21ef6db0cbc3d0802355f59311264475f3d0e51b6120259a0027a0ecbb89540afaa93936c610eee33bb9296617961c489ba7f0b4b6cd6aeb053d7bd7881590e42801b8581d658213ce0ff07ec20276a20a45f79c808a79cf58fd6b5a86fb16e034a527796aceaf9cabeac0c872d1eb569e7a3d6cdd9057fe9d596acdd06b615911f0a1f412c02ae85659a8f8895211994bd8c7086f27549fe4af5c66ee4f41ab4a98bc2106528aac15bd88c1f66358d8ca2ffe06551e61515d7c068ae1b31b5bf3b48e5a9643a0b94c83b58661d17455f6d6dfaa1f32137167658f4ae5a6d8a25a393059648d498c1190be90cb84e1797d885cf0a65145925fdf86367da5584f91809718fb3b23899412c97c517b4118aa7f5a312bccb0e676d2a753e0d0b2b1ac0ec34c839729d8be38df68d84279b2291c857c0c8d17a254e5294061d9a9d983ab36956761dd957e78cf8ff28dd206360d263d784740430cf5442fbc0aa3f3267163854f2a30a64344e02bcb1b420376237395977b65f7c7d92e14a534a034284fa2a2f0494033692387d200106c69f8e48e3ac3f6671e907a8e2a3d1cf58cb9f96fc20959ff21de640b17aa5ceea044f73e9047f96d4bd0e25a85b072293623a675622f079e56d0fc7ea4d6495223ef65a291c188516aa854717ce14ef32e98b77d66596207b56a6f1a9a167818c60744cd9141d8cdfc706c8ec847914c914ea17d4cdf375ac843d61df5a75e47de0f63c4dff027cf165d74eb04bfab3b809ef46519f4c7f6a503775d631520ccddef8241bed9c83969f25869d7fe26f150d80261ca1a9e367d82a43157ec651a3075e339cb6d72529f43a190f3162e3a3603fa74bbe44f92d7d13a36ba5d41e1bdef2254db6697f55aaef7ef58ac9bf98b48b64fb825c28e74a8b619059765c2cc8af0f1dc1f0a5e426df43bd621e5f7fc4ec9070ebc607b4f557bd27f65a68c81f9a089d318a016487fdcbc6765a296cd91080cd1e3960880a07e2ca5b81c4bc37f85fecf3eca852a36228bc02e33feb8a5859ac7d54b0ccf307f013ca171bd584f4a75c80a7e3d292603e7b40f9e66a3edc666ffacb6bb8055ddaa70b85b2581f5934924a63b8c2e8ea4d5179b65b24b6582a1e6fecfcc70af0ffca1296c95687d3d08e838aefb9d5de34f54cea30db3601f10ba6704f6c9b06f88d7b2ae69ec027ea12c0c6363b9e2bd666573d1676f471decf8f442a83d04754645a7fd2ed2c2f324ad7a03603790a5b071214d9781c620c68812e8926d2d3cf92e0c40753338570de27aba7ca8a1b48859dd729d7d1c6a56686bf13938b9b1a670609a2b30f0157a1b  </script>  <div class="hbe hbe-content">    <form id="hbeForm" class="hbe hbe-form" onsubmit="return false">      <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">需要密码查看</span>      </label>    </div>      <button class="hbe hbe-button" type="submit">Decrypt</button>      <div class="hbe hbe-error" role="alert" aria-live="polite"></div>    </form>  </div></div><script data-pjax src="/lib/hbe.9e70f1e1d2.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt"     data-hbe-format="4"     data-wpm="密码错误， 重试"     data-whm="密码错误， 重试"     data-salt="04cc9412aac04c753f0768ba28551685b3486ee5634d45e46ee4779e394a5023"     data-nonce="bd82dffde897f5cf01867927"     data-kdf-iterations="600000"     data-auto-save="false">  <script id="hbeData" type="hbeData">    78597a2a143f03ec97c6995031138e46f143aaa63d171a603b16d294a127d3d5acaa2f24d3b681712c0fa4267a36e96396702be79e912dfe132d0ab9eeda2b78dbcf150888cba3832d955d7f72c48578adbe5886492dd223dbff37dcd862a36699bba95114f8a1fbdfa2b738b8f4335df896eb425505e4c2c8864627517e4ef4518d8095fec0e43ba1fbcef5e70ac1e1e8695bc6b3dc52e7d3d85dc2d286951a61e75d5989cabf446e8b6b71b73a6c6abf68f4e78353f5948b6eeaaf485d9fd9ced894218f276c8c62837685b413d82b603435becd36fa31f96506e265194844bc88fe30c96ac9df86922a8c6d6ab523610f19434beb02c31f598383faa2c5e6bb1e216d2043e663b30d96a4a0f3b7aed4c6becab6e3164260cdbda5698c3af45e4a53a10ff27e48a2c3dcabd93ae4caa1d9a7d9c2b7fa897373a72d25c57a0f3ce29cfbf13b36af706a6f8b2f3b7b498ce792b4f6991e1a1a8d9733dc5af01c14b1b6787c4d82c55144835106771c8da4ded7a622f69b78f88f74e5d643c61a31632886078ac81df1ca2113943abe0bb4dd0a928198d9c07cb7d69d434d55a634323827491bdabb067477dce11cf2371eedeb1f68dd0a4c9492b54df72f8cd6ea45f513653aa6960a5662d8d3663cbf63206cb05b135461146fb281ab84f608c91858ebf68a6b3a7b59eee96884a309d8f60ede2517386f7a49407bb99bd77190350669543e05400940d4c9eb0ea6b80403b489cb096584b7c07db0823d6d625a61f585388becdaf67c62e0aa0fe03c7fd8252a0df5917477798add188291311e8103037d00c9656c60a4bf19361452330f0887cc6298e3c6f908ea7b3ffd2311f5019e9e6634d3efdd1513e4e5aee5b0e8572c555de10e4fe215d6c9ede627384e82e68599811c838c024ec97d2fbd4e81fafe35743ebf58a0fa2cc09d45989132c59eea4007b7e45d3cbfc224ae882c52947d3eebba27ee64602b4204b2f418c47e5968336520201d057df1cdcc3881ad7a9fb356755aafec5aae8bf2694ea7a927fc3099cd88e0c2ca452470869435a7add9248181c4e7ba237cb217876b5d48470cca08e318ba96577d62efffc8fe572d8a7a3242d5ba28fc3143a64e3c6df9ba455d9052f74badb2f2beeb1e071f481af3c77feb3f1df6532801783ca8fa4adcdd85adae8f7f859e259915575b58efa12f59365e9cc98446bda957f67549b6f315dfa13a96c9dba4db85c3257427cb86dca8911537709e912809b6fd2abfa37542a4503d9ac9c4ace21e11085bdb40843036098344b9cc94c5c2a9e5b4d2cbf5a661b4624d2338b254a3005dda38ba56ab7e0f91a7cb09f9d0abb2e62626cdea43f449b01e460b8374dd496af85da31c89010b978186f30b6a1022dc2039275b39a57422c46138e129ff59a61857f51bf8e71581be0a75a069cd0c9cd896f3be80b018a951ba2c593e9ef1ae67b93e1974afdb5861cb9de02b13c4c099b5eb8655fe0dfc13fa4cd9bf49cdbd9489da6f70a7366e8ddfdc947888c5cda23746b2a2b458e5c236e3ec8367cc3aee3bbca8109b9607171163d547082a52a5f6076b405556daf302205c0f245ece18676add74b15e2f2bbcb5b623cfbba67bdfcda52635dd8da7928ca8f7d584983f1f78c28e6d73f12897f521c91bfb5a29936479202bf28f76c4796730a4660b94cff29c02016ce1d5b7b70affe9560937d0ae380686872623c9767acde1f304e61e5ba95a083be1b062c45aa11aaa9423621d461b3487cbc02595aee1b65e0c790b59a2f9  </script>  <div class="hbe hbe-content">    <form id="hbeForm" class="hbe hbe-form" onsubmit="return false">      <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">需要密码查看</span>      </label>    </div>      <button class="hbe hbe-button" type="submit">Decrypt</button>      <div class="hbe hbe-error" role="alert" aria-live="polite"></div>    </form>  </div></div><script data-pjax src="/lib/hbe.9e70f1e1d2.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       
       
       <categories>
@@ -268,9 +445,384 @@
           
           <category> magooj </category>
           
-          <category> 一阶 </category>
+          <category> 一阶 语法基础 </category>
           
-          <category> 第一课 </category>
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 题解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第二课 认识C++02</title>
+      <link href="/2026/01/01/magaooj%E4%B8%80%E9%98%B6%E7%AC%AC%E4%BA%8C%E8%AF%BE/"/>
+      <url>/2026/01/01/magaooj%E4%B8%80%E9%98%B6%E7%AC%AC%E4%BA%8C%E8%AF%BE/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt"     data-hbe-format="4"     data-wpm="密码错误， 重试"     data-whm="密码错误， 重试"     data-salt="e3103303de244d22a95aa42b778d6f23283bb90016e104d9893e92c6a47048bc"     data-nonce="cafd2c39000bb2c135382ab7"     data-kdf-iterations="600000"     data-auto-save="false">  <script id="hbeData" type="hbeData">    51036d725407acdd281ff6c612c8aa74  </script>  <div class="hbe hbe-content">    <form id="hbeForm" class="hbe hbe-form" onsubmit="return false">      <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">需要密码查看</span>      </label>    </div>      <button class="hbe hbe-button" type="submit">Decrypt</button>      <div class="hbe hbe-error" role="alert" aria-live="polite"></div>    </form>  </div></div><script data-pjax src="/lib/hbe.9e70f1e1d2.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 题解 </category>
+          
+          <category> magooj </category>
+          
+          <category> 一阶 语法基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 题解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第三课 算术运算符01</title>
+      <link href="/2026/01/01/magaooj%E4%B8%80%E9%98%B6%E7%AC%AC%E4%B8%89%E8%AF%BE/"/>
+      <url>/2026/01/01/magaooj%E4%B8%80%E9%98%B6%E7%AC%AC%E4%B8%89%E8%AF%BE/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt"     data-hbe-format="4"     data-wpm="密码错误， 重试"     data-whm="密码错误， 重试"     data-salt="e19c22e15fd8f7a79aaef318091e2fcb8db34091ef7f018dd8551d6fc2934a6c"     data-nonce="c97ee474ed491c844ee0a06d"     data-kdf-iterations="600000"     data-auto-save="false">  <script id="hbeData" type="hbeData">    264c2c606219f2b4d9199d813fd1d9e5  </script>  <div class="hbe hbe-content">    <form id="hbeForm" class="hbe hbe-form" onsubmit="return false">      <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">需要密码查看</span>      </label>    </div>      <button class="hbe hbe-button" type="submit">Decrypt</button>      <div class="hbe hbe-error" role="alert" aria-live="polite"></div>    </form>  </div></div><script data-pjax src="/lib/hbe.9e70f1e1d2.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 题解 </category>
+          
+          <category> magooj </category>
+          
+          <category> 一阶 语法基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 题解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第四课 算术运算符02</title>
+      <link href="/2026/01/01/magaooj%E4%B8%80%E9%98%B6%E7%AC%AC%E5%9B%9B%E8%AF%BE/"/>
+      <url>/2026/01/01/magaooj%E4%B8%80%E9%98%B6%E7%AC%AC%E5%9B%9B%E8%AF%BE/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt"     data-hbe-format="4"     data-wpm="密码错误， 重试"     data-whm="密码错误， 重试"     data-salt="c2b712d50b55566d02d94955bdac28d2b04ea0d836fdcb51ed9c25e7f0f84643"     data-nonce="6e8eb57c4623eb4c53d5d641"     data-kdf-iterations="600000"     data-auto-save="false">  <script id="hbeData" type="hbeData">    1a04d6694a8352e2182e5236de3a1f37  </script>  <div class="hbe hbe-content">    <form id="hbeForm" class="hbe hbe-form" onsubmit="return false">      <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">需要密码查看</span>      </label>    </div>      <button class="hbe hbe-button" type="submit">Decrypt</button>      <div class="hbe hbe-error" role="alert" aria-live="polite"></div>    </form>  </div></div><script data-pjax src="/lib/hbe.9e70f1e1d2.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 题解 </category>
+          
+          <category> magooj </category>
+          
+          <category> 一阶 语法基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 题解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第五课 分支结构</title>
+      <link href="/2026/01/01/magaooj%E4%B8%80%E9%98%B6%E7%AC%AC%E4%BA%94%E8%AF%BE/"/>
+      <url>/2026/01/01/magaooj%E4%B8%80%E9%98%B6%E7%AC%AC%E4%BA%94%E8%AF%BE/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt"     data-hbe-format="4"     data-wpm="密码错误， 重试"     data-whm="密码错误， 重试"     data-salt="887cd11f81ae29d943ab06546bf20906357c7198e91a4d3b63517cdc07e87ce9"     data-nonce="9477e7c9e0dc0359f55d70cb"     data-kdf-iterations="600000"     data-auto-save="false">  <script id="hbeData" type="hbeData">    ed0720f47081e164e6bf1287a05470f6  </script>  <div class="hbe hbe-content">    <form id="hbeForm" class="hbe hbe-form" onsubmit="return false">      <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">需要密码查看</span>      </label>    </div>      <button class="hbe hbe-button" type="submit">Decrypt</button>      <div class="hbe hbe-error" role="alert" aria-live="polite"></div>    </form>  </div></div><script data-pjax src="/lib/hbe.9e70f1e1d2.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 题解 </category>
+          
+          <category> magooj </category>
+          
+          <category> 一阶 语法基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 题解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ybt第六章 函数</title>
+      <link href="/2026/01/01/ybt%E7%AC%AC%E5%85%AD%E7%AB%A0-%E5%87%BD%E6%95%B0/"/>
+      <url>/2026/01/01/ybt%E7%AC%AC%E5%85%AD%E7%AB%A0-%E5%87%BD%E6%95%B0/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt"     data-hbe-format="4"     data-wpm="密码错误， 重试"     data-whm="密码错误， 重试"     data-salt="4c987a48713c259cd4e08d55f9e6c8094e85beba81dee13b4b7c60b551fa6749"     data-nonce="9b2540cf4a81c8804ed4366e"     data-kdf-iterations="600000"     data-auto-save="false">  <script id="hbeData" type="hbeData">    f8a9c3b4895e71c885c03248bdf7393f  </script>  <div class="hbe hbe-content">    <form id="hbeForm" class="hbe hbe-form" onsubmit="return false">      <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">需要密码查看</span>      </label>    </div>      <button class="hbe hbe-button" type="submit">Decrypt</button>      <div class="hbe hbe-error" role="alert" aria-live="polite"></div>    </form>  </div></div><script data-pjax src="/lib/hbe.9e70f1e1d2.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 题解 </category>
+          
+          <category> ybt </category>
+          
+          <category> 第六章 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 题解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第六课 分支结构嵌套与逻辑运算符</title>
+      <link href="/2026/01/01/magaooj%E4%B8%80%E9%98%B6%E7%AC%AC%E5%85%AD%E8%AF%BE/"/>
+      <url>/2026/01/01/magaooj%E4%B8%80%E9%98%B6%E7%AC%AC%E5%85%AD%E8%AF%BE/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt"     data-hbe-format="4"     data-wpm="密码错误， 重试"     data-whm="密码错误， 重试"     data-salt="cabaa3139ba86dc7227fb181a6bfd1030e65587215a5c14877dd7c17976ccc7e"     data-nonce="a5890977ce7edea77c661885"     data-kdf-iterations="600000"     data-auto-save="false">  <script id="hbeData" type="hbeData">    b6fae51887cb220cd02cfbeb3cf136b5  </script>  <div class="hbe hbe-content">    <form id="hbeForm" class="hbe hbe-form" onsubmit="return false">      <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">需要密码查看</span>      </label>    </div>      <button class="hbe hbe-button" type="submit">Decrypt</button>      <div class="hbe hbe-error" role="alert" aria-live="polite"></div>    </form>  </div></div><script data-pjax src="/lib/hbe.9e70f1e1d2.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 题解 </category>
+          
+          <category> magooj </category>
+          
+          <category> 一阶 语法基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 题解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第七课 循环 累加累乘与最值</title>
+      <link href="/2026/01/01/magaooj%E4%B8%80%E9%98%B6%E7%AC%AC%E4%B8%83%E8%AF%BE/"/>
+      <url>/2026/01/01/magaooj%E4%B8%80%E9%98%B6%E7%AC%AC%E4%B8%83%E8%AF%BE/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt"     data-hbe-format="4"     data-wpm="密码错误， 重试"     data-whm="密码错误， 重试"     data-salt="15daa2e2a5d17af84bf57b3344d4cccfa9ba7c9b64fe874bc0daf3635e227be1"     data-nonce="38969a2f709d02cd7639994c"     data-kdf-iterations="600000"     data-auto-save="false">  <script id="hbeData" type="hbeData">    e6a9d935ef5ac1fb79ec23f10d2de32f  </script>  <div class="hbe hbe-content">    <form id="hbeForm" class="hbe hbe-form" onsubmit="return false">      <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">需要密码查看</span>      </label>    </div>      <button class="hbe hbe-button" type="submit">Decrypt</button>      <div class="hbe hbe-error" role="alert" aria-live="polite"></div>    </form>  </div></div><script data-pjax src="/lib/hbe.9e70f1e1d2.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 题解 </category>
+          
+          <category> magooj </category>
+          
+          <category> 一阶 语法基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 题解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第八课 for循环计数</title>
+      <link href="/2026/01/01/magaooj%E4%B8%80%E9%98%B6%E7%AC%AC%E5%85%AB%E8%AF%BE/"/>
+      <url>/2026/01/01/magaooj%E4%B8%80%E9%98%B6%E7%AC%AC%E5%85%AB%E8%AF%BE/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt"     data-hbe-format="4"     data-wpm="密码错误， 重试"     data-whm="密码错误， 重试"     data-salt="6fef501f8aff8302589f90c8e80f89c9a100db37bee980a6cb2271beca9e4612"     data-nonce="c50325dd2a2d5e2d9fdb1c69"     data-kdf-iterations="600000"     data-auto-save="false">  <script id="hbeData" type="hbeData">    3d63754bd9879d6043a78d0ef91b066b  </script>  <div class="hbe hbe-content">    <form id="hbeForm" class="hbe hbe-form" onsubmit="return false">      <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">需要密码查看</span>      </label>    </div>      <button class="hbe hbe-button" type="submit">Decrypt</button>      <div class="hbe hbe-error" role="alert" aria-live="polite"></div>    </form>  </div></div><script data-pjax src="/lib/hbe.9e70f1e1d2.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 题解 </category>
+          
+          <category> magooj </category>
+          
+          <category> 一阶 语法基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 题解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第九课 while循环</title>
+      <link href="/2026/01/01/magaooj%E4%B8%80%E9%98%B6%E7%AC%AC%E4%B9%9D%E8%AF%BE/"/>
+      <url>/2026/01/01/magaooj%E4%B8%80%E9%98%B6%E7%AC%AC%E4%B9%9D%E8%AF%BE/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt"     data-hbe-format="4"     data-wpm="密码错误， 重试"     data-whm="密码错误， 重试"     data-salt="e967613e23f5f10c8ec140eac94ca33c419d4c46a270c51676106c52ed91bc54"     data-nonce="6148c33924f317eb52d8d883"     data-kdf-iterations="600000"     data-auto-save="false">  <script id="hbeData" type="hbeData">    1597f46f693a50be011a57957102c9c8  </script>  <div class="hbe hbe-content">    <form id="hbeForm" class="hbe hbe-form" onsubmit="return false">      <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">需要密码查看</span>      </label>    </div>      <button class="hbe hbe-button" type="submit">Decrypt</button>      <div class="hbe hbe-error" role="alert" aria-live="polite"></div>    </form>  </div></div><script data-pjax src="/lib/hbe.9e70f1e1d2.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 题解 </category>
+          
+          <category> magooj </category>
+          
+          <category> 一阶 语法基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 题解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第十课 循环与控制结构</title>
+      <link href="/2026/01/01/magaooj%E4%B8%80%E9%98%B6%E7%AC%AC%E5%8D%81%E8%AF%BE/"/>
+      <url>/2026/01/01/magaooj%E4%B8%80%E9%98%B6%E7%AC%AC%E5%8D%81%E8%AF%BE/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt"     data-hbe-format="4"     data-wpm="密码错误， 重试"     data-whm="密码错误， 重试"     data-salt="2f8b5e5d4cf066a2d1ebed5783648d149079b4072ecf1624bf27ebdf7fbcd0ac"     data-nonce="e28dd89195f0fe9d34314929"     data-kdf-iterations="600000"     data-auto-save="false">  <script id="hbeData" type="hbeData">    de5e0027d144fa68b81850b0af346f3f  </script>  <div class="hbe hbe-content">    <form id="hbeForm" class="hbe hbe-form" onsubmit="return false">      <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">需要密码查看</span>      </label>    </div>      <button class="hbe hbe-button" type="submit">Decrypt</button>      <div class="hbe hbe-error" role="alert" aria-live="polite"></div>    </form>  </div></div><script data-pjax src="/lib/hbe.9e70f1e1d2.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 题解 </category>
+          
+          <category> magooj </category>
+          
+          <category> 一阶 语法基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 题解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第十一课 一维数组</title>
+      <link href="/2026/01/01/magaooj%E4%B8%80%E9%98%B6%E7%AC%AC%E5%8D%81%E4%B8%80%E8%AF%BE/"/>
+      <url>/2026/01/01/magaooj%E4%B8%80%E9%98%B6%E7%AC%AC%E5%8D%81%E4%B8%80%E8%AF%BE/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt"     data-hbe-format="4"     data-wpm="密码错误， 重试"     data-whm="密码错误， 重试"     data-salt="7e86e8b0dc3d5630e65d55af629908147adb25d9b7e5ca3c29185e452d503082"     data-nonce="107771486fdf69d90d1a2686"     data-kdf-iterations="600000"     data-auto-save="false">  <script id="hbeData" type="hbeData">    159cdee1f12049f1c6dd598e9c1dd6af  </script>  <div class="hbe hbe-content">    <form id="hbeForm" class="hbe hbe-form" onsubmit="return false">      <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">需要密码查看</span>      </label>    </div>      <button class="hbe hbe-button" type="submit">Decrypt</button>      <div class="hbe hbe-error" role="alert" aria-live="polite"></div>    </form>  </div></div><script data-pjax src="/lib/hbe.9e70f1e1d2.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 题解 </category>
+          
+          <category> magooj </category>
+          
+          <category> 一阶 语法基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 题解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第十二课 字符串01</title>
+      <link href="/2026/01/01/magaooj%E4%B8%80%E9%98%B6%E7%AC%AC%E5%8D%81%E4%BA%8C%E8%AF%BE/"/>
+      <url>/2026/01/01/magaooj%E4%B8%80%E9%98%B6%E7%AC%AC%E5%8D%81%E4%BA%8C%E8%AF%BE/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt"     data-hbe-format="4"     data-wpm="密码错误， 重试"     data-whm="密码错误， 重试"     data-salt="8cec074f3addda79bfc26efd4f30a40913d2e5142b6bb7e9b69b00b6f26dc20f"     data-nonce="8a93bc17f12177d0254b9d7d"     data-kdf-iterations="600000"     data-auto-save="false">  <script id="hbeData" type="hbeData">    f42667bb44d77c23e327adc492f1b040  </script>  <div class="hbe hbe-content">    <form id="hbeForm" class="hbe hbe-form" onsubmit="return false">      <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">需要密码查看</span>      </label>    </div>      <button class="hbe hbe-button" type="submit">Decrypt</button>      <div class="hbe hbe-error" role="alert" aria-live="polite"></div>    </form>  </div></div><script data-pjax src="/lib/hbe.9e70f1e1d2.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 题解 </category>
+          
+          <category> magooj </category>
+          
+          <category> 一阶 语法基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 题解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第十三课 循环嵌套</title>
+      <link href="/2026/01/01/magaooj%E4%B8%80%E9%98%B6%E7%AC%AC%E5%8D%81%E4%B8%89%E8%AF%BE/"/>
+      <url>/2026/01/01/magaooj%E4%B8%80%E9%98%B6%E7%AC%AC%E5%8D%81%E4%B8%89%E8%AF%BE/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt"     data-hbe-format="4"     data-wpm="密码错误， 重试"     data-whm="密码错误， 重试"     data-salt="79883811328632155e63c11ba16c85fff145d92cf4afa445b46e39957527d723"     data-nonce="e6b9488769e8abec2b49c7a3"     data-kdf-iterations="600000"     data-auto-save="false">  <script id="hbeData" type="hbeData">    1266cc24bf13709b8e3eda44d97c8122  </script>  <div class="hbe hbe-content">    <form id="hbeForm" class="hbe hbe-form" onsubmit="return false">      <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">需要密码查看</span>      </label>    </div>      <button class="hbe hbe-button" type="submit">Decrypt</button>      <div class="hbe hbe-error" role="alert" aria-live="polite"></div>    </form>  </div></div><script data-pjax src="/lib/hbe.9e70f1e1d2.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 题解 </category>
+          
+          <category> magooj </category>
+          
+          <category> 一阶 语法基础 </category>
           
       </categories>
       
